@@ -32,7 +32,7 @@ set incsearch                                                " search as you typ
 set laststatus=2                                             " always show statusline
 set list                                                     " show trailing whitespace
 "set listchars=tab:▸\ ,trail:▫
-set listchars=tab:>-,trail:-
+set listchars=tab:>- ",trail:-
 "set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
 set number                                                   " show line numbers
 set ruler                                                    " show where you are
