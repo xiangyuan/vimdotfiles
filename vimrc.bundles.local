@@ -4,4 +4,3 @@
 " " Maximum Awesome.
 " " Please create ~/.vim.bundles.local and add any extra bundles you want
 " there
-Bundle 'Valloric/YouCompleteMe' 
