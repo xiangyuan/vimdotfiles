@@ -18,6 +18,14 @@ endif
 
 " ensure ftdetect et al work by including this after the Vundle stuff
 filetype plugin indent on
+"" Enable folding based on syntax rules
+set foldmethod=syntax
+
+"" Adjust the highlighting
+highlight Folded guibg=grey guifg=blue
+
+"" Map folding to Spacebar
+nnoremap <Space> za
 
 set autoindent
 set autoread                                                 " reload files when changed on disk, i.e. via `git checkout`
