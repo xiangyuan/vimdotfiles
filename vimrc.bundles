@@ -45,3 +45,6 @@ Bundle 'tpope/vim-dispatch'
 Bundle 'tpope/vim-commentary'
 Bundle 'tpope/vim-markdown'
 Bundle 'othree / vim-autocomplpop'
+
+Bundle 'jnwhiteh/vim-golang'
+Bundle 'Blackrush/vim-gocode'
