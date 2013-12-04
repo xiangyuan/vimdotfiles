@@ -42,8 +42,8 @@ set incsearch                                                " search as you typ
 set laststatus=2                                             " always show statusline
 set list                                                     " show trailing whitespace
 "set listchars=tab:▸\ ,trail:▫
-set listchars=tab:>- ",trail:-
-"set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
+"set listchars=tab:>- ",trail:-
+set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
 set number                                                   " show line numbers
 set ruler                                                    " show where you are
 set scrolloff=3                                              " show context above/below cursorline
@@ -81,6 +81,8 @@ nmap <leader>g :GitGutterToggle<CR>
 nmap <leader>c <Plug>Kwbd
 map <silent> <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>
 
+"go auto fmt
+au FileType go au BufWritePre <buffer> Fmt
 " plugin settings
 let g:ctrlp_match_window = 'order:ttb,max:20'
 let g:NERDSpaceDelims=1
