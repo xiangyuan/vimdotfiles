@@ -13,7 +13,6 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'leafgarland/typescript-vim'
 Bundle 'majutsushi/tagbar'
 Bundle 'mileszs/ack.vim'
-Bundle 'msanders/snipmate.vim'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'nono/vim-handlebars'
 Bundle 'pangloss/vim-javascript'
@@ -53,3 +52,12 @@ Bundle 'cfurrow/vim-l9'
 Bundle 'ervandew/supertab'
 Bundle 'dgryski/vim-godef'
 Bundle 'shawncplus/phpcomplete.vim'
+"update sinpmate 
+Bundle "MarcWeber/vim-addon-mw-utils"
+Bundle "tomtom/tlib_vim"
+Bundle "garbas/vim-snipmate"
+" Optional:
+Bundle "honza/vim-snippets"
+Bundle 'mattn/emmet-vim'
+"golang 
+Bundle "cespare/vim-go-templates"
