@@ -61,3 +61,4 @@ Bundle "honza/vim-snippets"
 Bundle 'mattn/emmet-vim'
 "golang 
 Bundle "cespare/vim-go-templates"
+Bundle "evanmiller/nginx-vim-syntax"
