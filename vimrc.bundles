@@ -59,6 +59,11 @@ Bundle "garbas/vim-snipmate"
 " Optional:
 Bundle "honza/vim-snippets"
 Bundle 'mattn/emmet-vim'
+Bundle 'Raimondi/delimitMate'
 "golang 
 Bundle "cespare/vim-go-templates"
 Bundle "evanmiller/nginx-vim-syntax"
+"node js
+"Bundle "Lokaltog/vim-easymotion"
+Bundle "moll/vim-node"
+Bundle "ahayman/vim-nodejs-complete"
