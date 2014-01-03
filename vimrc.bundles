@@ -65,5 +65,11 @@ Bundle "cespare/vim-go-templates"
 Bundle "evanmiller/nginx-vim-syntax"
 "node js
 "Bundle "Lokaltog/vim-easymotion"
+Bundle "jelera/vim-javascript-syntax"
+Bundle "marijnh/tern_for_vim"
+Bundle "othree/javascript-libraries-syntax.vim"
 Bundle "moll/vim-node"
 Bundle "ahayman/vim-nodejs-complete"
+"python configuration
+Bundle "bling/vim-airline"
+Bundle "klen/python-mode"
