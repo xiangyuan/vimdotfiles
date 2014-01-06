@@ -10,6 +10,11 @@ let g:godef_same_file_in_same_window=1
 autocmd FileType go setlocal noexpandtab shiftwidth=4 tabstop=4 softtabstop=4 nolist
 let g:gocode_gofmt_tabwidth=4
 autocmd BufWritePost *.go !gofmt -tabindent=false -tabwidth=4%
+
+" highlight search
+"set hlsearch
+"nmap <leader>hl :let @/ = ""<CR>
+
 " gui settings
 if (&t_Co == 256 || has('gui_running'))
   if ($TERM_PROGRAM == 'iTerm.app')

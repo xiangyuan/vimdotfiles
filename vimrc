@@ -114,6 +114,9 @@ map <silent> <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimr
 
 "go auto fmt
 au FileType go au BufWritePre <buffer> Fmt
+" in case you forgot to sudo
+cmap w!! %!sudo tee > /dev/null %
+
 " plugin settings
 let g:ctrlp_match_window = 'order:ttb,max:20'
 let g:NERDSpaceDelims=1
