@@ -102,7 +102,7 @@ map <C-l> <C-w>l
 map <leader>l :Align
 nmap <leader>a :Ack<space>
 nmap <leader>u :CtrlPBuffer<CR>
-nmap <leader>d :NERDTreeToggle<CR>
+nmap <leader>nd :NERDTreeToggle<CR>
 nmap <leader>f :NERDTreeFind<CR>
 nmap <leader>t :CtrlP<CR>
 nmap <leader>T :CtrlPClearCache<CR>:CtrlP<CR>
