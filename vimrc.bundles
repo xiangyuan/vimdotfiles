@@ -1,4 +1,4 @@
-" Bundles here are part of the core Maximum Awesome setup
+"vim-scripts/Align Bundles here are part of the core Maximum Awesome setup
 " Do NOT add bundles to this list, as they might get removed when you upgrade
 " Maximum Awesome.
 " Please create ~/.vim.bundles.local and add any extra bundles you want there
@@ -74,3 +74,5 @@ Bundle "ahayman/vim-nodejs-complete"
 Bundle "bling/vim-airline"
 Bundle "klen/python-mode"
 Bundle "davidhalter/jedi-vim"
+"buffer tool
+Bundle "bling/vim-bufferline"

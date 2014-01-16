@@ -37,7 +37,6 @@ let g:nodejs_complete_config = {
 \}
 
 "the python configuration
-let g:airline#extensions#tabline#enabled = 1
 " python-mode                                                                   
 " " https://github.com/klen/python-mode                                           
 let g:pymode_virtualenv=1 " Auto fix vim python paths if virtualenv enabled        
