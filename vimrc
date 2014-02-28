@@ -112,12 +112,20 @@ nmap <leader>g :GitGutterToggle<CR>
 nmap <leader>c <Plug>Kwbd
 map <silent> <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>
 
-"go auto fmt
-au FileType go au BufWritePre <buffer> Fmt
-" in case you forgot to sudo
-cmap w!! %!sudo tee > /dev/null %
+"the clang complete configure
+let g:clang_complete_auto = 0
+let g:clang_use_library = 1
+let g:clang_periodic_quickfix = 0
+let g:clang_close_preview = 1
+" For Objective-C, this needs to be active, otherwise multi-parameter methods
+" won't be completed correctly
+let g:clang_snippets = 1
+let g:clang_snippets_engine = 'ultisnips'
+" This might change depending on your installation
+let g:clang_library_path = '/Library/Developer/CommandLineTools/usr/lib/libclang.dylib'
 
-" plugin settings
+"go au BufWritePre <buffer> Fmt
+" in case you forgin settings
 let g:ctrlp_match_window = 'order:ttb,max:20'
 let g:NERDSpaceDelims=1
 let g:gitgutter_enabled = 0
