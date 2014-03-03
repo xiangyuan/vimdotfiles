@@ -81,6 +81,6 @@ Bundle "xolox/vim-misc"
 "c/c ++ ios"
 Bundle "vim-scripts/c.vim"
 Bundle "eraserhd/vim-ios"
+Bundle 'guns/ultisnips'
 Bundle 'Rip-Rip/clang_complete'
-Bundle "SirVer/ultisnips"
 Bundle "b4winckler/vim-objc"

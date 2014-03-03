@@ -45,6 +45,8 @@ if filereadable(expand("~/.vimrc.bundles"))
   source ~/.vimrc.bundles.local
 endif
 
+"set tags
+set tags+=~/Game/cocos2d-x/tools/tolua++/tags
 " ensure ftdetect et al work by including this after the Vundle stuff
 filetype plugin indent on
 "" Enable folding based on syntax rules
@@ -113,7 +115,7 @@ nmap <leader>c <Plug>Kwbd
 map <silent> <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>
 
 "the clang complete configure
-let g:clang_complete_auto = 0
+"let g:clang_complete_auto = 0
 let g:clang_use_library = 1
 let g:clang_periodic_quickfix = 0
 let g:clang_close_preview = 1
