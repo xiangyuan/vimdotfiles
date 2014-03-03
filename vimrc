@@ -46,6 +46,7 @@ if filereadable(expand("~/.vimrc.bundles"))
 endif
 
 "set tags
+set showfulltag
 set tags+=~/Game/cocos2d-x/tools/tolua++/tags
 " ensure ftdetect et al work by including this after the Vundle stuff
 filetype plugin indent on
