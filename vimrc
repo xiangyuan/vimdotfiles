@@ -45,11 +45,45 @@ if filereadable(expand("~/.vimrc.bundles"))
   source ~/.vimrc.bundles.local
 endif
 
+" add a definition for Objective-C to tagbar
+let g:tagbar_type_objc = {
+    \ 'ctagstype' : 'ObjectiveC',
+    \ 'kinds'     : [
+        \ 'i:interface',
+        \ 'I:implementation',
+        \ 'p:Protocol',
+        \ 'm:Object_method',
+        \ 'c:Class_method',
+        \ 'v:Global_variable',
+        \ 'F:Object field',
+        \ 'f:function',
+        \ 'p:property',
+        \ 't:type_alias',
+        \ 's:type_structure',
+        \ 'e:enumeration',
+        \ 'M:preprocessor_macro',
+    \ ],
+    \ 'sro'        : ' ',
+    \ 'kind2scope' : {
+        \ 'i' : 'interface',
+        \ 'I' : 'implementation',
+        \ 'p' : 'Protocol',
+        \ 's' : 'type_structure',
+        \ 'e' : 'enumeration'
+    \ },
+    \ 'scope2kind' : {
+        \ 'interface'      : 'i',
+        \ 'implementation' : 'I',
+        \ 'Protocol'       : 'p',
+        \ 'type_structure' : 's',
+        \ 'enumeration'    : 'e'
+    \ }
+\ }
 "set tags
 set showfulltag
 set tags+=~/Game/cocos2d-x/tags
 set tags+=~/Game/cocos2d-x/tools/tolua++/tags
-" ensure ftdetect et al work by including this after the Vundle stuff
+"ensure ftdetect et al work by including this after the Vundle stuff
 filetype plugin indent on
 "" Enable folding based on syntax rules
 set foldmethod=syntax
