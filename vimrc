@@ -152,15 +152,15 @@ map <silent> <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimr
 
 "the clang complete configure
 "let g:clang_complete_auto = 0
-let g:clang_use_library = 1
-let g:clang_periodic_quickfix = 0
-let g:clang_close_preview = 1
+"let g:clang_use_library = 1
+"let g:clang_periodic_quickfix = 0
+"let g:clang_close_preview = 1
 " For Objective-C, this needs to be active, otherwise multi-parameter methods
 " won't be completed correctly
-let g:clang_snippets = 1
-let g:clang_snippets_engine = 'ultisnips'
+"let g:clang_snippets = 1
+"let g:clang_snippets_engine = 'ultisnips'
 " This might change depending on your installation
-let g:clang_library_path = '/Library/Developer/CommandLineTools/usr/lib/libclang.dylib'
+"let g:clang_library_path = '/Library/Developer/CommandLineTools/usr/lib/libclang.dylib'
 
 "go au BufWritePre <buffer> Fmt
 " in case you forgin settings
