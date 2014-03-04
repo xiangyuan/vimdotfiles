@@ -150,6 +150,19 @@ nmap <leader>g :GitGutterToggle<CR>
 nmap <leader>c <Plug>Kwbd
 map <silent> <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>
 
+"change you complete me plugin default mappings"{{{
+""refer to this blog post:http://0x3f.org/blog/make-youcompleteme-ultisnips-compatible/
+"let g:ycm_key_list_select_completion = ['<C-TAB>', '<Down>']
+"let g:ycm_key_list_previous_completion = ['<C-S-TAB>', '<Up>']
+"let g:SuperTabDefaultCompletionType = '<C-Tab>'
+nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
+let g:ycm_confirm_extra_conf = 1
+let g:ycm_global_ycm_extra_conf="~/.vim/.ycm_extra_conf.py"
+let g:tern_show_argument_hints='on_hold'
+let g:indent_guides_start_level = 2
+let g:indent_guides_guide_size = 1
+"}}}
+
 "the clang complete configure
 "let g:clang_complete_auto = 0
 "let g:clang_use_library = 1
