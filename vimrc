@@ -86,6 +86,7 @@ set tags+=~/Game/cocos2d-x/tools/tolua++/tags
 "ensure ftdetect et al work by including this after the Vundle stuff
 filetype plugin indent on
 "" Enable folding based on syntax rules
+set cursorline cursorcolumn
 set foldmethod=syntax
 set foldnestmax=10
 set nofoldenable
