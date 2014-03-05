@@ -86,7 +86,6 @@ set tags+=~/Game/cocos2d-x/tools/tolua++/tags
 "ensure ftdetect et al work by including this after the Vundle stuff
 filetype plugin indent on
 "" Enable folding based on syntax rules
-set cursorline cursorcolumn
 set foldmethod=syntax
 set foldnestmax=10
 set nofoldenable
@@ -151,30 +150,49 @@ nmap <leader>g :GitGutterToggle<CR>
 nmap <leader>c <Plug>Kwbd
 map <silent> <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>
 
+"configure for UltiSnips plugin {{{ 
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+"}}}
+"config syntastic {{{
+let g:syntastic_check_on_open=1
+let g:syntastic_cpp_include_dirs = ['/usr/include/']
+let g:syntastic_cpp_remove_include_errors = 1
+let g:syntastic_cpp_check_header = 1
+let g:syntastic_cpp_compiler = 'clang++'
+let g:syntastic_cpp_compiler_options = '-std=c++11 -stdlib=libstdc++'
+""set error or warning signs
+let g:syntastic_error_symbol = '✗'
+let g:syntastic_warning_symbol = '⚠'
+"whether to show balloons
+let g:syntastic_enable_balloons = 1
+"}}}
 "change you complete me plugin default mappings"{{{
 ""refer to this blog post:http://0x3f.org/blog/make-youcompleteme-ultisnips-compatible/
-"let g:ycm_key_list_select_completion = ['<C-TAB>', '<Down>']
-"let g:ycm_key_list_previous_completion = ['<C-S-TAB>', '<Up>']
-"let g:SuperTabDefaultCompletionType = '<C-Tab>'
-nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
+let g:ycm_key_list_select_completion = ['<c-tab>', '<down>']
+let g:ycm_key_list_previous_completion = ['<c-s-tab>', '<up>']
+let g:supertabdefaultcompletiontype = '<c-tab>'
+nnoremap <leader>jd :ycmcompleter gotodefinitionelsedeclaration<cr>
 let g:ycm_confirm_extra_conf = 1
-let g:ycm_global_ycm_extra_conf="~/.vim/.ycm_extra_conf.py"
+let g:ycm_global_ycm_extra_conf="~/github/maximum-awesome/.ycm_extra_conf.py"
 let g:tern_show_argument_hints='on_hold'
 let g:indent_guides_start_level = 2
 let g:indent_guides_guide_size = 1
 "}}}
 
 "the clang complete configure
-"let g:clang_complete_auto = 0
-"let g:clang_use_library = 1
-"let g:clang_periodic_quickfix = 0
-"let g:clang_close_preview = 1
-" For Objective-C, this needs to be active, otherwise multi-parameter methods
-" won't be completed correctly
-"let g:clang_snippets = 1
-"let g:clang_snippets_engine = 'ultisnips'
-" This might change depending on your installation
-"let g:clang_library_path = '/Library/Developer/CommandLineTools/usr/lib/libclang.dylib'
+" let g:clang_complete_auto = 0
+" let g:clang_use_library = 1
+" let g:clang_periodic_quickfix = 0
+" let g:clang_close_preview = 1
+" " for objective-c, this needs to be active, otherwise multi-parameter methods
+" " won't be completed correctly
+" let g:clang_snippets = 1
+" let g:clang_snippets_engine = 'ultisnips'
+" " this might change depending on your installation
+" let g:clang_user_options='-stdlib=libc++ -std=c++11 -IIncludePath'
+" let g:clang_library_path = '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib'
 
 "go au BufWritePre <buffer> Fmt
 " in case you forgin settings
