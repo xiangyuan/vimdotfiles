@@ -162,7 +162,15 @@ let g:syntastic_cpp_remove_include_errors = 1
 let g:syntastic_cpp_check_header = 1
 let g:syntastic_objcpp_compiler = 1
 let g:syntastic_cpp_compiler = 'clang++'
+"let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++'
+"linux settings ---
 let g:syntastic_cpp_compiler_options = '-std=c++11 -stdlib=libstdc++'
+" add cpp11 syntax support {{{
+" let g:syntastic_cpp_compiler_options = ' -std=c++11'
+"run cpp11 code"
+if !has("win32")
+nmap <leader>rr :<C-U>!clang++ -std=c++11 -stdlib=libc++  -o %:r % &&  ./%:r <cr>
+endif
 ""set error or warning signs
 let g:syntastic_error_symbol = '✗'
 let g:syntastic_warning_symbol = '⚠'
