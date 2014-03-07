@@ -96,6 +96,9 @@ highlight Folded guibg=grey guifg=blue
 "" Map folding to Spacebar
 nnoremap <Space> za
 
+" 突出显示当前行等 不喜欢这种定位可注解
+set cursorcolumn
+set cursorline              " 突出显示当前行
 set autoindent
 set autoread                                                 " reload files when changed on disk, i.e. via `git checkout`
 set backspace=2                                              " Fix broken backspace in some setups
