@@ -46,7 +46,6 @@ Bundle 'othree/vim-autocomplpop'
 
 Bundle 'jnwhiteh/vim-golang'
 Bundle 'Blackrush/vim-gocode'
-Bundle 'scrooloose/syntastic'
 Bundle 'cfurrow/vim-l9'
 Bundle 'ervandew/supertab'
 Bundle 'dgryski/vim-godef'
