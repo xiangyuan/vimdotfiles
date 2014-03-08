@@ -10,6 +10,7 @@ filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
+set background=dark
 " gotags for ctags
 au BufWritePost *.go silent! !ctags -R &
 let g:tagbar_type_go = {

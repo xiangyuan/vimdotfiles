@@ -16,13 +16,16 @@ autocmd BufWritePost *.go !gofmt -tabindent=false -tabwidth=4%
 "nmap <leader>hl :let @/ = ""<CR>
 
 " gui settings
-if (&t_Co == 256 || has('gui_running'))
-  if ($TERM_PROGRAM == 'iTerm.app')
-    colorscheme solarized
+set background=dark
+if (&t_co == 256 || has('gui_running'))
+   if ($term_program == 'iterm.app')
+      colorscheme solarized
   else
-    colorscheme desert
-  endif
+     colorscheme desert
+     "colorscheme solarized 
+   endif
 endif
+
 
 “node complete 
 autocmd BufReadPre *.js let b:javascript_lib_use_jquery = 1
