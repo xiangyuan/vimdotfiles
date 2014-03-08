@@ -57,7 +57,7 @@ flags = [
     # relevant for c++ headers.
     # For a C project, you would set this to 'c' instead of 'c++'.
     '-x',
-    'c++',
+    #'c++',
     '-isystem',
     # This path will only work on OS X, but extra paths that don't exist are not
     # harmful
@@ -69,7 +69,7 @@ flags = [
     '-isystem',
     '/usr/local/include',
     '-isystem',
-    '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/c++/v1',
+    '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/c++/v1',
     '-isystem',
     '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include',
     '-isystem',
