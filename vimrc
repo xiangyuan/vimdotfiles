@@ -161,6 +161,7 @@ let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 "}}}
 "config syntastic {{{
 let g:syntastic_check_on_open=1
+let g:syntastic_auto_jump = 1
 let g:syntastic_cpp_include_dirs = ['/usr/include/']
 let g:syntastic_cpp_remove_include_errors = 1
 let g:syntastic_cpp_check_header = 1
@@ -170,7 +171,7 @@ let g:syntastic_cpp_compiler = 'clang++'
 "linux settings ---
 let g:syntastic_cpp_compiler_options = '-std=c++11 -stdlib=libstdc++'
 " add cpp11 syntax support {{{
-" let g:syntastic_cpp_compiler_options = ' -std=c++11'
+let g:syntastic_cpp_compiler_options = ' -std=c++11'
 "run cpp11 code"
 if !has("win32")
 nmap <leader>rr :<C-U>!clang++ -std=c++11 -stdlib=libc++  -o %:r % &&  ./%:r <cr>
@@ -188,6 +189,7 @@ let g:ycm_key_list_previous_completion = ['<c-s-tab>', '<up>']
 let g:supertabdefaultcompletiontype = '<c-tab>'
 nnoremap <leader>jd :ycmcompleter gotodefinitionelsedeclaration<cr>
 let g:ycm_confirm_extra_conf = 1
+"let g:ycm_register_as_syntastic_checker=0
 let g:ycm_global_ycm_extra_conf="~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py"
 let g:tern_show_argument_hints='on_hold'
 let g:indent_guides_start_level = 2
