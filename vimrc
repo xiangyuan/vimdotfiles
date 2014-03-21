@@ -46,6 +46,11 @@ if filereadable(expand("~/.vimrc.bundles"))
   source ~/.vimrc.bundles.local
 endif
 
+" air line enable
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
+noremap <silent> <Left> :bp<CR>
+noremap <silent> <Right> :bn<CR>
 " add a definition for Objective-C to tagbar
 let g:tagbar_type_objc = {
     \ 'ctagstype' : 'ObjectiveC',
@@ -189,6 +194,7 @@ let g:ycm_key_list_previous_completion = ['<c-s-tab>', '<up>']
 let g:supertabdefaultcompletiontype = '<c-tab>'
 nnoremap <leader>jd :ycmcompleter gotodefinitionelsedeclaration<cr>
 let g:ycm_confirm_extra_conf = 1
+let g:ycm_auto_trigger = 0
 "let g:ycm_register_as_syntastic_checker=0
 let g:ycm_global_ycm_extra_conf="~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py"
 let g:tern_show_argument_hints='on_hold'

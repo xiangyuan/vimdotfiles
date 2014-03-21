@@ -73,7 +73,7 @@ Bundle "bling/vim-airline"
 Bundle "klen/python-mode"
 Bundle "davidhalter/jedi-vim"
 "buffer tool
-Bundle "bling/vim-bufferline"
+"Bundle "bling/vim-bufferline"
 "lua"
 Bundle "xolox/vim-lua-ftplugin"
 Bundle "xolox/vim-misc"
