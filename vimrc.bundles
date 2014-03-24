@@ -69,8 +69,8 @@ Bundle "othree/javascript-libraries-syntax.vim"
 Bundle "moll/vim-node"
 Bundle "ahayman/vim-nodejs-complete"
 "python configuration
-Bundle "bling/vim-airline"
 Bundle "klen/python-mode"
+Bundle "bling/vim-airline"
 Bundle "davidhalter/jedi-vim"
 "buffer tool
 "Bundle "bling/vim-bufferline"
