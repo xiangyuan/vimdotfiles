@@ -125,7 +125,7 @@ set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
 set number                                                   " show line numbers
 set ruler                                                    " show where you are
 set scrolloff=3                                              " show context above/below cursorline
-set shiftwidth=2                                             " normal mode indentation commands use 2 spaces
+set shiftwidth=4                                             " normal mode indentation commands use 2 spaces
 set showcmd
 set smartcase                                                " case-sensitive search if any caps
 set softtabstop=4                                            " insert mode tab and backspace use 2 spaces
