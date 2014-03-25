@@ -182,6 +182,7 @@ if !has("win32")
 nmap <leader>rr :<C-U>!clang++ -std=c++11 -stdlib=libc++  -o %:r % &&  ./%:r <cr>
 endif
 ""set error or warning signs
+let g:syntastic_aggregate_errors = 1
 let g:syntastic_error_symbol = '✗'
 let g:syntastic_warning_symbol = '⚠'
 "whether to show balloons
