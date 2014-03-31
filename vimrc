@@ -49,6 +49,9 @@ endif
 " air line enable
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
+" fswitcher
+let b:fswitchdst = 'c,cpp,m,mm'
+
 noremap <silent> <Left> :bp<CR>
 noremap <silent> <Right> :bn<CR>
 " add a definition for Objective-C to tagbar

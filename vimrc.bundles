@@ -84,4 +84,6 @@ Bundle "eraserhd/vim-ios"
 "Bundle "b4winckler/vim-objc"
 Bundle 'SirVer/ultisnips'
 Bundle 'Valloric/YouCompleteMe'
+Bundle 'schickling/vim-bufonly'
+Bundle 'derekwyatt/vim-fswitch'
 "Bundle 'vim-scripts/a.vim'
