@@ -42,7 +42,7 @@ Bundle 'vim-scripts/matchit.zip'
 Bundle 'tpope/vim-dispatch'
 Bundle 'tpope/vim-commentary'
 Bundle 'tpope/vim-markdown'
-Bundle 'othree/vim-autocomplpop'
+"Bundle 'othree/vim-autocomplpop'
 
 Bundle 'jnwhiteh/vim-golang'
 Bundle 'Blackrush/vim-gocode'
@@ -71,19 +71,17 @@ Bundle "ahayman/vim-nodejs-complete"
 "python configuration
 Bundle "klen/python-mode"
 Bundle "bling/vim-airline"
-Bundle "davidhalter/jedi-vim"
-"buffer tool
-"Bundle "bling/vim-bufferline"
+"Bundle "davidhalter/jedi-vim"
 "lua"
-Bundle "xolox/vim-lua-ftplugin"
-Bundle "xolox/vim-misc"
+"Bundle "xolox/vim-lua-ftplugin"
+"Bundle "xolox/vim-misc"
 "c/c ++ ios"
 Bundle "vim-scripts/c.vim"
 Bundle "eraserhd/vim-ios"
 "Bundle 'Rip-Rip/clang_complete'
 "Bundle "b4winckler/vim-objc"
-Bundle 'SirVer/ultisnips'
-Bundle 'Valloric/YouCompleteMe'
-Bundle 'schickling/vim-bufonly'
-Bundle 'derekwyatt/vim-fswitch'
+"Bundle 'SirVer/ultisnips'
+"Bundle 'Valloric/YouCompleteMe'
+"Bundle 'schickling/vim-bufonly'
+"Bundle 'derekwyatt/vim-fswitch'
 "Bundle 'vim-scripts/a.vim'
