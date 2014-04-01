@@ -64,7 +64,7 @@ Bundle "evanmiller/nginx-vim-syntax"
 "node js
 "Bundle "Lokaltog/vim-easymotion"
 Bundle "jelera/vim-javascript-syntax"
-Bundle "marijnh/tern_for_vim"
+"Bundle "marijnh/tern_for_vim"
 Bundle "othree/javascript-libraries-syntax.vim"
 Bundle "moll/vim-node"
 Bundle "ahayman/vim-nodejs-complete"
