@@ -84,3 +84,6 @@ Bundle 'SirVer/ultisnips'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'schickling/vim-bufonly'
 Bundle 'derekwyatt/vim-fswitch'
+"color theme molokai
+Bundle 'tomasr/molokai'
+Bundle 'BenBergman/TagHighlight'

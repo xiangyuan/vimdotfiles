@@ -17,14 +17,16 @@ autocmd BufWritePost *.go !gofmt -tabindent=false -tabwidth=4%
 
 " gui settings
 set background=dark
-if (&t_co == 256 || has('gui_running'))
-   if ($term_program == 'iterm.app')
-      colorscheme solarized
-  else
-     colorscheme desert
-     "colorscheme solarized 
-   endif
-endif
+" let g:rehash256 = 1
+let g:molokai_original = 1
+" if (&t_co == 256 || has('gui_running'))
+"    if ($term_program == 'iterm.app')
+"       colorscheme solarized
+"   else
+"      colorscheme desert
+"      "colorscheme solarized 
+"    endif
+" endif
 
 
 “node complete 
