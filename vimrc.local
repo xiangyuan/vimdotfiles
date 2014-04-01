@@ -15,6 +15,12 @@ autocmd BufWritePost *.go !gofmt -tabindent=false -tabwidth=4%
 "set hlsearch
 "nmap <leader>hl :let @/ = ""<CR>
 
+" tag highlight settings
+if ! exists('g:TagHighlightSettings')
+    let g:TagHighlightSettings = {}
+endif
+let g:TagHighlightSettings['ForcedPythonVariant'] = 'if_pyth'
+let g:TagHighlightSettings['CtagsExecutable'] = 'etags'
 " gui settings
 set background=dark
 " let g:rehash256 = 1
