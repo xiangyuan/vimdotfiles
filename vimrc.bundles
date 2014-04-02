@@ -87,3 +87,4 @@ Bundle 'derekwyatt/vim-fswitch'
 "color theme molokai
 Bundle 'tomasr/molokai'
 Bundle 'BenBergman/TagHighlight'
+Bundle 'quintusl/DoxygenToolkit.vim'

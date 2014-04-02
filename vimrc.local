@@ -15,6 +15,15 @@ autocmd BufWritePost *.go !gofmt -tabindent=false -tabwidth=4%
 "set hlsearch
 "nmap <leader>hl :let @/ = ""<CR>
 
+'doxgentoolkit configuration'
+let g:DoxygenToolkit_briefTag_pre="@Synopsis  "
+let g:DoxygenToolkit_paramTag_pre="@Param "
+let g:DoxygenToolkit_returnTag="@Returns   "
+let g:DoxygenToolkit_blockHeader="-------------------------------"
+let g:DoxygenToolkit_blockFooter="---------------------------------"
+let g:DoxygenToolkit_authorName="Mathias Lorente"
+let g:DoxygenToolkit_licenseTag="My own license" <-- !!! Does not end with "\<enter>"
+
 " tag highlight settings
 if ! exists('g:TagHighlightSettings')
     let g:TagHighlightSettings = {}
