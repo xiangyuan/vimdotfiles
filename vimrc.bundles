@@ -1,4 +1,4 @@
-"vim-scripts/Align Bundles here are part of the core Maximum Awesome setup
+" Bundles here are part of the core Maximum Awesome setup
 " Do NOT add bundles to this list, as they might get removed when you upgrade
 " Maximum Awesome.
 " Please create ~/.vimrc.bundles.local and add any extra bundles you want there
