@@ -91,3 +91,5 @@ Bundle 'tomasr/molokai'
 Bundle 'BenBergman/TagHighlight'
 Bundle 'quintusl/DoxygenToolkit.vim'
 Bundle 'leshill/vim-json.git'
+" cocos2dx plugin
+Bundle 'Xuyuanp/vim-cc2dx'
