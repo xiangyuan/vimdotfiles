@@ -4,6 +4,7 @@
 " Please create ~/.vimrc.bundles.local and add any extra bundles you want there
 "Bundle 'airblade/vim-gitgutter'
 " version control system replace the gitgutter
+Bundle 'vim-scripts/Align'
 Bundle 'mhinz/vim-signify'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'austintaylor/vim-indentobject'
@@ -14,7 +15,8 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'kien/ctrlp.vim'
 Bundle 'leafgarland/typescript-vim'
 Bundle 'majutsushi/tagbar'
-Bundle 'mileszs/ack.vim'
+Bundle 'rking/ag.vim'
+Bundle 'msanders/snipmate.vim'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'nono/vim-handlebars'
 Bundle 'pangloss/vim-javascript'

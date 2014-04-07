@@ -151,8 +151,11 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 map <leader>l :Align
-nmap <leader>a :Ack<space>
-nmap <leader>u :CtrlPBuffer<CR>
+"nmap <leader>a :Ack<space>
+"nmap <leader>u :CtrlPBuffer<CR>
+nmap <leader>a :Ag<space>
+nmap <leader>b :CtrlPBuffer<CR>
+"nmap <leader>d :NERDTreeToggle<CR>
 nmap <leader>nd :NERDTreeToggle<CR>
 nmap <leader>f :NERDTreeFind<CR>
 nmap <leader>t :CtrlP<CR>
@@ -228,8 +231,6 @@ let g:gitgutter_enabled = 0
 
 " Use The Silver Searcher https://github.com/ggreer/the_silver_searcher
 if executable('ag')
-  let g:ackprg = 'ag --nogroup --column'
-
   " Use Ag over Grep
   set grepprg=ag\ --nogroup\ --nocolor
 
