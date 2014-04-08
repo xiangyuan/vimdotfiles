@@ -94,3 +94,4 @@ Bundle 'quintusl/DoxygenToolkit.vim'
 Bundle 'elzr/vim-json'
 " cocos2dx plugin
 Bundle 'Xuyuanp/vim-cc2dx'
+"Bundle 'xolox/vim-easytags'
