@@ -26,6 +26,11 @@ augroup
 "set hlsearch
 "nmap <leader>hl :let @/ = ""<CR>
 
+" the android development settings
+" {{{
+let g:android_sdk_path = '/Users/liyajie1209/adt-bundle-mac-x86_64/sdk'
+let g:ant_path = '/usr/local/bin/ant'
+
 'doxgentoolkit configuration'
 let g:DoxygenToolkit_briefTag_pre="@Synopsis  "
 let g:DoxygenToolkit_paramTag_pre="@Param "
