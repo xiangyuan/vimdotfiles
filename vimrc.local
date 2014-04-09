@@ -43,8 +43,9 @@ let g:TagHighlightSettings['ForcedPythonVariant'] = 'if_pyth'
 let g:TagHighlightSettings['CtagsExecutable'] = 'etags'
 " gui settings
 set background=dark
-" let g:rehash256 = 1
-let g:molokai_original = 1
+"colorscheme gruvbox
+let g:rehash256 = 1
+"let g:molokai_original = 1
 " if (&t_co == 256 || has('gui_running'))
 "    if ($term_program == 'iterm.app')
 "       colorscheme solarized

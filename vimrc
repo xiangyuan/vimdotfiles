@@ -10,7 +10,6 @@ filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
-set background=dark
 " gotags for ctags
 au BufWritePost *.go silent! !ctags -R &
 let g:tagbar_type_go = {
@@ -46,14 +45,6 @@ if filereadable(expand("~/.vimrc.bundles"))
   source ~/.vimrc.bundles.local
 endif
 
-" air line enable
-let g:airline#extensions#tabline#enabled = 1
-let g:airline_powerline_fonts = 1
-" fswitcher
-let b:fswitchdst = 'c,cpp,m,mm'
-
-noremap <silent> <Left> :bp<CR>
-noremap <silent> <Right> :bn<CR>
 " add a definition for Objective-C to tagbar
 let g:tagbar_type_objc = {
     \ 'ctagstype' : 'ObjectiveC',
@@ -88,6 +79,16 @@ let g:tagbar_type_objc = {
         \ 'enumeration'    : 'e'
     \ }
 \ }
+
+" air line enable
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
+" fswitcher
+let b:fswitchdst = 'c,cpp,m,mm'
+
+noremap <silent> <Left> :bp<CR>
+noremap <silent> <Right> :bn<CR>
+
 "set tags
 set showfulltag
 set tags+=~/Game/zhaoqin_v1/ZhaoQin/Classes/tags
@@ -223,7 +224,13 @@ let g:indent_guides_guide_size = 1
 " let g:clang_user_options='-stdlib=libc++ -std=c++11 -IIncludePath'
 " let g:clang_library_path = '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib'
 
-"go au BufWritePre <buffer> Fmt
+" {{{
+"  auto set filetype 
+"  These are file extension filetype settings
+au! BufRead,BufNewFile *.esp set ft=perl
+au! BufRead,BufNewFile *.mm set ft=objcpp
+au! BufRead,BufNewFile *.mlp set ft=xml
+" }}}
 " in case you forgin settings
 let g:ctrlp_match_window = 'order:ttb,max:20'
 let g:NERDSpaceDelims=1

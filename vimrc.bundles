@@ -89,9 +89,14 @@ Bundle 'schickling/vim-bufonly'
 Bundle 'derekwyatt/vim-fswitch'
 "color theme molokai
 Bundle 'tomasr/molokai'
+Bundle 'morhetz/gruvbox'
+
 Bundle 'BenBergman/TagHighlight'
 Bundle 'quintusl/DoxygenToolkit.vim'
 Bundle 'elzr/vim-json'
 " cocos2dx plugin
 Bundle 'Xuyuanp/vim-cc2dx'
 "Bundle 'xolox/vim-easytags'
+"
+"android develop vim plugin
+Bundle 'hsanson/vim-android'
