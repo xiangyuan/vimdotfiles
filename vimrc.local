@@ -50,6 +50,12 @@ let g:TagHighlightSettings['CtagsExecutable'] = 'etags'
 set background=dark
 "colorscheme gruvbox
 let g:rehash256 = 1
+"if has("gui_running")
+    " let s:uname = system("uname")
+    " if s:uname == 'Darwin\n'
+set guifont = PowerlineSymbols
+    " endif
+"endif
 "let g:molokai_original = 1
 " if (&t_co == 256 || has('gui_running'))
 "    if ($term_program == 'iterm.app')

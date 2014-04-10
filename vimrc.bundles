@@ -100,3 +100,6 @@ Bundle 'Xuyuanp/vim-cc2dx'
 "android develop vim plugin
 Bundle 'hsanson/vim-android'
 Bundle 'vim-scripts/javacomplete'
+" useful plugin
+Bundle 'terryma/vim-multiple-cursors'
+Bundle 'tommcdo/vim-exchange'
