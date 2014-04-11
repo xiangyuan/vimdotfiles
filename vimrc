@@ -74,9 +74,14 @@ let g:tagbar_type_objc = {
 " air line enable
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
-" fswitcher
-let b:fswitchdst = 'c,cpp,m,mm'
-
+" {{{fswitcher
+augroup myfiles
+    au!
+    au BufEnter *.h let b:fswitchdst = 'c,cpp,m,mm'
+    au BufEnter *.m let b:fswitchdst = 'h'
+    au BufEnter *.mm let b:fswitchdst = 'h'
+augroup END
+" }}}
 noremap <silent> <Left> :bp<CR>
 noremap <silent> <Right> :bn<CR>
 
