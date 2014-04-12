@@ -78,8 +78,8 @@ let g:airline_powerline_fonts = 1
 augroup myfiles
     au!
     au BufEnter *.h let b:fswitchdst = 'c,cpp,m,mm'
-    au BufEnter *.m let b:fswitchdst = 'h'
-    au BufEnter *.mm let b:fswitchdst = 'h'
+    "au BufEnter *.m let b:fswitchdst = 'h', let b:fswitchlocs = 'reg:*.h'
+    "au BufEnter *.mm let b:fswitchdst = 'h', let b:fswitchlocs = 'reg:*.h'
 augroup END
 " }}}
 noremap <silent> <Left> :bp<CR>
