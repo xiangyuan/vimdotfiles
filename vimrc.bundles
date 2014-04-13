@@ -103,3 +103,6 @@ Bundle 'vim-scripts/javacomplete'
 " useful plugin
 Bundle 'terryma/vim-multiple-cursors'
 Bundle 'tommcdo/vim-exchange'
+
+" tomml syntax
+Bundle 'cespare/vim-toml'
