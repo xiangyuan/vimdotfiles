@@ -106,3 +106,4 @@ Bundle 'tommcdo/vim-exchange'
 
 " tomml syntax
 Bundle 'cespare/vim-toml'
+Bundle 'mbbill/undotree'

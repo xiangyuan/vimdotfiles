@@ -206,6 +206,14 @@ let g:tern_show_argument_hints='on_hold'
 let g:indent_guides_start_level = 2
 let g:indent_guides_guide_size = 1
 "}}}
+" the undo tree
+" {{{
+nnoremap <F5> :UndotreeToggle<CR>
+if has("persistent_undo")
+    set undodir=~/.undotree/
+    set undofile
+endif
+" }}}
 
 "the clang complete configure
 " let g:clang_complete_auto = 0
