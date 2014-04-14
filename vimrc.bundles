@@ -94,7 +94,10 @@ Bundle 'BenBergman/TagHighlight'
 Bundle 'quintusl/DoxygenToolkit.vim'
 Bundle 'elzr/vim-json'
 " cocos2dx plugin
+Bundle 'fishy/projtags-vim'
 Bundle 'Xuyuanp/vim-cc2dx'
+Bundle 'szw/vim-tags' 
+" support the YouCompleteMe
 "Bundle 'xolox/vim-easytags'
 "
 "android develop vim plugin
