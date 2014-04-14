@@ -4,7 +4,7 @@
 " Please create ~/.vimrc.bundles.local and add any extra bundles you want there
 " version control system replace the gitgutter
 Bundle 'airblade/vim-gitgutter'
-Bundle 'mhinz/vim-signify'
+"Bundle 'mhinz/vim-signify'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'austintaylor/vim-indentobject'
 Bundle 'christoomey/vim-tmux-navigator'

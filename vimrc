@@ -215,6 +215,12 @@ if has("persistent_undo")
 endif
 " }}}
 
+" the android development settings
+" {{{
+let g:android_sdk_path = '/Users/liyajie1209/adt-bundle-mac-x86_64/sdk'
+let g:ant_path = '/usr/local/bin/ant'
+" }}}
+
 "the clang complete configure
 " let g:clang_complete_auto = 0
 " let g:clang_use_library = 1
