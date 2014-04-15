@@ -6,9 +6,7 @@ inoremap jj <ESC>
 
 "supertab
 let g:SuperTabDefaultCompletionType = "context"
-" vim-lua-ftplugin
-let g:lua_complete_omni = 1
-"godef
+godef
 let g:godef_same_file_in_same_window=1
 autocmd FileType go setlocal noexpandtab shiftwidth=4 tabstop=4 softtabstop=4 nolist
 let g:gocode_gofmt_tabwidth=4
