@@ -87,9 +87,10 @@ noremap <silent> <Right> :bn<CR>
 
 "set tags
 set showfulltag
+
 set tags+=~/Game/zhaoqin_v1/ZhaoQin/Classes/tags
-set tags+=~/Game/cocos2d-x/tags
-set tags+=~/Game/cocos2d-x/tools/tolua++/tags
+"set tags+=~/Game/cocos2d-x/tags
+"set tags+=~/Game/cocos2d-x/tools/tolua++/tags
 "ensure ftdetect et al work by including this after the Vundle stuff
 filetype plugin indent on
 "" Enable folding based on syntax rules
