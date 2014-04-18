@@ -89,7 +89,7 @@ noremap <silent> <Right> :bn<CR>
 set showfulltag
 
 set tags+=~/Game/zhaoqin_v1/ZhaoQin/Classes/tags
-set tags+=~/Game/cocos2d-x/cocos/tags
+set tags+=~/Game/cocos2d/
 "set tags+=~/Game/cocos2d-x/tags
 "set tags+=~/Game/cocos2d-x/tools/tolua++/tags
 "ensure ftdetect et al work by including this after the Vundle stuff
@@ -194,6 +194,7 @@ let g:syntastic_warning_symbol = '⚠'
 "whether to show balloons
 let g:syntastic_enable_balloons = 1
 "}}}
+
 "change you complete me plugin default mappings"{{{
 ""refer to this blog post:http://0x3f.org/blog/make-youcompleteme-ultisnips-compatible/
 let g:ycm_key_list_select_completion = ['<c-tab>', '<down>']
@@ -209,6 +210,9 @@ let g:tern_show_argument_hints='on_hold'
 let g:indent_guides_start_level = 2
 let g:indent_guides_guide_size = 1
 "}}}
+
+" cocos2dx lua dictionary
+set dictionary+=~/github/maximum-awesome/cocos2d.dict
 " the undo tree
 " {{{
 nnoremap <F5> :UndotreeToggle<CR>
@@ -217,8 +221,6 @@ if has("persistent_undo")
     set undofile
 endif
 " }}}
-" vim-lua-ftplugin
-let g:lua_complete_omni = 1
 
 " the android development settings
 " {{{
@@ -249,7 +251,7 @@ au! BufRead,BufNewFile *.mlp set ft=xml
 " in case you forgin settings
 let g:ctrlp_match_window = 'order:ttb,max:20'
 let g:NERDSpaceDelims=1
-let g:gitgutter_enabled = 0
+let g:gitgutter_enabled = 1
 
 " Use The Silver Searcher https://github.com/ggreer/the_silver_searcher
 if executable('ag')
