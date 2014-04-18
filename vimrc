@@ -252,6 +252,8 @@ au! BufRead,BufNewFile *.mlp set ft=xml
 let g:ctrlp_match_window = 'order:ttb,max:20'
 let g:NERDSpaceDelims=1
 let g:gitgutter_enabled = 1
+let g:gitgutter_map_keys = 0
+let g:gitgutter_highlight_lines = 1
 
 " Use The Silver Searcher https://github.com/ggreer/the_silver_searcher
 if executable('ag')
