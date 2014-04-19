@@ -212,7 +212,7 @@ let g:indent_guides_guide_size = 1
 "}}}
 
 " cocos2dx lua dictionary
-set dictionary+=~/github/maximum-awesome/cocos2d.dict
+set dictionary+=~/github/maximum-awesome/cocoslua.dict
 " the undo tree
 " {{{
 nnoremap <F5> :UndotreeToggle<CR>
