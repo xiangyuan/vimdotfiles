@@ -213,6 +213,11 @@ let g:indent_guides_guide_size = 1
 
 " cocos2dx lua dictionary
 set dictionary+=~/github/maximum-awesome/cocoslua.dict
+
+" the easytags
+" disable it default
+let g:easytags_on_cursorhold = 0
+" }}
 " the undo tree
 " {{{
 nnoremap <F5> :UndotreeToggle<CR>
@@ -251,9 +256,9 @@ au! BufRead,BufNewFile *.mlp set ft=xml
 " in case you forgin settings
 let g:ctrlp_match_window = 'order:ttb,max:20'
 let g:NERDSpaceDelims=1
-let g:gitgutter_enabled = 1
-let g:gitgutter_map_keys = 0
-let g:gitgutter_highlight_lines = 1
+let g:gitgutter_enabled=0
+" let g:gitgutter_map_keys = 0
+" let g:gitgutter_highlight_lines = 1
 
 " Use The Silver Searcher https://github.com/ggreer/the_silver_searcher
 if executable('ag')

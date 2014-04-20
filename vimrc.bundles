@@ -101,7 +101,7 @@ Bundle 'fishy/projtags-vim'
 Bundle 'Xuyuanp/vim-cc2dx'
 Bundle 'szw/vim-tags' 
 " support the YouCompleteMe
-"Bundle 'xolox/vim-easytags'
+Bundle 'xolox/vim-easytags'
 "
 "android develop vim plugin
 Bundle 'hsanson/vim-android'
