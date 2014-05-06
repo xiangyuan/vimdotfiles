@@ -42,7 +42,6 @@ Bundle 'vim-scripts/matchit.zip'
 "add by myself
 "the dispatcher
 Bundle 'tpope/vim-dispatch'
-Bundle 'tpope/vim-commentary'
 Bundle 'tpope/vim-markdown'
 Bundle 'othree/vim-autocomplpop'
 
@@ -73,7 +72,6 @@ Bundle "moll/vim-node"
 Bundle "ahayman/vim-nodejs-complete"
 Bundle 'maksimr/vim-jsbeautify'
 "python configuration
-Bundle "klen/python-mode"
 Bundle "bling/vim-airline"
 Bundle "davidhalter/jedi-vim"
 "lua"
