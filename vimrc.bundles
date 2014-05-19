@@ -79,6 +79,7 @@ Bundle "xolox/vim-lua-ftplugin"
 Bundle "xolox/vim-misc"
 "Bundle "xolox/vim-lua-inspect"
 "c/c ++ ios"
+Bundle 'octol/vim-cpp-enhanced-highlight'
 Bundle "vim-scripts/c.vim"
 Bundle "eraserhd/vim-ios"
 "Bundle 'Rip-Rip/clang_complete'
@@ -96,7 +97,6 @@ Bundle 'quintusl/DoxygenToolkit.vim'
 Bundle 'elzr/vim-json'
 " cocos2dx plugin
 Bundle 'fishy/projtags-vim'
-Bundle 'Xuyuanp/vim-cc2dx'
 Bundle 'szw/vim-tags' 
 " support the YouCompleteMe
 Bundle 'xolox/vim-easytags'

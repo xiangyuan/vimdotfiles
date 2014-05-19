@@ -12,33 +12,34 @@ call vundle#rc()
 
 " gotags for ctags
 au BufWritePost *.go silent! !ctags -R &
-let g:tagbar_type_go = {
-    \ 'ctagstype' : 'go',
-    \ 'kinds'     : [
-        \ 'p:package',
-        \ 'i:imports:1',
-        \ 'c:constants',
-        \ 'v:variables',
-        \ 't:types',
-        \ 'n:interfaces',
-        \ 'w:fields',
-        \ 'e:embedded',
-        \ 'm:methods',
-        \ 'r:constructor',
-        \ 'f:functions'
-    \ ],
-    \ 'sro' : '.',
-    \ 'kind2scope' : {
-        \ 't' : 'ctype',
-        \ 'n' : 'ntype'
-    \ },
-    \ 'scope2kind' : {
-        \ 'ctype' : 't',
-        \ 'ntype' : 'n'
-    \ },
-    \ 'ctagsbin'  : 'gotags',
-    \ 'ctagsargs' : '-sort -silent'
-    \ }
+nmap <silent><F8> :!ctags -R --fields=+iaS --extra=+q .<CR>
+" let g:tagbar_type_go = {
+"     \ 'ctagstype' : 'go',
+"     \ 'kinds'     : [
+"         \ 'p:package',
+"         \ 'i:imports:1',
+"         \ 'c:constants',
+"         \ 'v:variables',
+"         \ 't:types',
+"         \ 'n:interfaces',
+"         \ 'w:fields',
+"         \ 'e:embedded',
+"         \ 'm:methods',
+"         \ 'r:constructor',
+"         \ 'f:functions'
+"     \ ],
+"     \ 'sro' : '.',
+"     \ 'kind2scope' : {
+"         \ 't' : 'ctype',
+"         \ 'n' : 'ntype'
+"     \ },
+"     \ 'scope2kind' : {
+"         \ 'ctype' : 't',
+"         \ 'ntype' : 'n'
+"     \ },
+"     \ 'ctagsbin'  : 'gotags',
+"     \ 'ctagsargs' : '-sort -silent'
+"     \ }
 " install Vundle bundles
 if filereadable(expand("~/.vimrc.bundles"))
   source ~/.vimrc.bundles
@@ -70,7 +71,17 @@ let g:tagbar_type_objc = {
     \ 'g:pragma',
   \ ],
 \ }
-
+" add the ruby tags
+let g:tagbar_type_ruby = {
+    \ 'kinds' : [
+        \ 'm:modules',
+        \ 'c:classes',
+        \ 'd:describes',
+        \ 'C:contexts',
+        \ 'f:methods',
+        \ 'F:singleton methods'
+    \ ]
+\ }
 " air line enable
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
@@ -88,10 +99,9 @@ noremap <silent> <Right> :bn<CR>
 "set tags
 set showfulltag
 
-set tags+=~/Game/zhaoqin_v1/ZhaoQin/Classes/tags
-set tags+=~/Game/cocos2d/
 "set tags+=~/Game/cocos2d-x/tags
 "set tags+=~/Game/cocos2d-x/tools/tolua++/tags
+set tags+=~/Game/zhaoqin_lua/zhaoqin/src/tags
 "ensure ftdetect et al work by including this after the Vundle stuff
 filetype plugin indent on
 "" Enable folding based on syntax rules
@@ -203,7 +213,7 @@ let g:supertabdefaultcompletiontype = '<c-tab>'
 nnoremap <leader>jd :ycmcompleter gotodefinitionelsedeclaration<cr>
 let g:ycm_confirm_extra_conf = 1
 let g:ycm_collect_identifiers_from_tags_files = 1
-"let g:ycm_auto_trigger = 0
+let g:ycm_auto_trigger = 0
 "let g:ycm_register_as_syntastic_checker=0
 let g:ycm_global_ycm_extra_conf="~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py"
 let g:tern_show_argument_hints='on_hold'
@@ -214,6 +224,8 @@ let g:indent_guides_guide_size = 1
 " cocos2dx lua dictionary
 set dictionary+=~/github/maximum-awesome/cocoslua.dict
 
+" the lua omni
+let g:lua_complete_omni = 1
 " the easytags
 " disable it default
 let g:easytags_on_cursorhold = 0
