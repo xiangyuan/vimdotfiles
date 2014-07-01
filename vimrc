@@ -155,48 +155,6 @@ endif
 
 " keyboard shortcuts
 let mapleader = ','
-map <C-h> <C-w>h
-map <C-j> <C-w>j
-map <C-k> <C-w>k
-map <C-l> <C-w>l
-map <leader>l :Align
-"nmap <leader>a :Ack<space>
-"nmap <leader>u :CtrlPBuffer<CR>
-nmap <leader>a :Ag<space>
-nmap <leader>b :CtrlPBuffer<CR>
-"nmap <leader>d :NERDTreeToggle<CR>
-nmap <leader>nd :NERDTreeToggle<CR>
-nmap <leader>f :NERDTreeFind<CR>
-nmap <leader>t :CtrlP<CR>
-nmap <leader>T :CtrlPClearCache<CR>:CtrlP<CR>
-nmap <leader>] :TagbarToggle<CR>
-nmap <leader><space> :call whitespace#strip_trailing()<CR>
-nmap <leader>g :GitGutterToggle<CR>
-nmap <leader>c <Plug>Kwbd
-map <silent> <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>
-
-"configure for UltiSnips plugin {{{ 
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<tab>"
-let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
-"}}}
-"config syntastic {{{
-let g:syntastic_check_on_open=1
-let g:syntastic_auto_jump = 1
-let g:syntastic_cpp_include_dirs = ['/usr/include/']
-let g:syntastic_cpp_remove_include_errors = 1
-let g:syntastic_cpp_check_header = 1
-let g:syntastic_objcpp_compiler = 1
-let g:syntastic_cpp_compiler = 'clang++'
-"let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++'
-"linux settings ---
-let g:syntastic_cpp_compiler_options = '-std=c++11 -stdlib=libstdc++'
-" add cpp11 syntax support {{{
-let g:syntastic_cpp_compiler_options = ' -std=c++11'
-"run cpp11 code"
-if !has("win32")
-nmap <leader>rr :<C-U>!clang++ -std=c++11 -stdlib=libc++  -o %:r % &&  ./%:r <cr>
-endif
 ""set error or warning signs
 let g:syntastic_aggregate_errors = 1
 let g:syntastic_error_symbol = '✗'
@@ -205,24 +163,43 @@ let g:syntastic_warning_symbol = '⚠'
 let g:syntastic_enable_balloons = 1
 "}}}
 
-"change you complete me plugin default mappings"{{{
-""refer to this blog post:http://0x3f.org/blog/make-youcompleteme-ultisnips-compatible/
-let g:ycm_key_list_select_completion = ['<c-tab>', '<down>']
-let g:ycm_key_list_previous_completion = ['<c-s-tab>', '<up>']
-let g:supertabdefaultcompletiontype = '<c-tab>'
-nnoremap <leader>jd :ycmcompleter gotodefinitionelsedeclaration<cr>
-let g:ycm_confirm_extra_conf = 1
-let g:ycm_collect_identifiers_from_tags_files = 1
-let g:ycm_auto_trigger = 0
-"let g:ycm_register_as_syntastic_checker=0
-let g:ycm_global_ycm_extra_conf="~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py"
-let g:tern_show_argument_hints='on_hold'
-let g:indent_guides_start_level = 2
-let g:indent_guides_guide_size = 1
-"}}}
+" "change you complete me plugin default mappings"{{{
+" ""refer to this blog post:http://0x3f.org/blog/make-youcompleteme-ultisnips-compatible/
+" let g:ycm_key_list_select_completion = ['<c-tab>', '<down>']
+" let g:ycm_key_list_previous_completion = ['<c-s-tab>', '<up>']
+" let g:supertabdefaultcompletiontype = '<c-tab>'
+" nnoremap <leader>jd :ycmcompleter gotodefinitionelsedeclaration<cr>
+" let g:ycm_confirm_extra_conf = 1
+" let g:ycm_collect_identifiers_from_tags_files = 1
+" let g:ycm_auto_trigger = 0
+" "let g:ycm_register_as_syntastic_checker=0
+" let g:ycm_global_ycm_extra_conf="~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py"
+" let g:tern_show_argument_hints='on_hold'
+" let g:indent_guides_start_level = 2
+" let g:indent_guides_guide_size = 1
+" "}}}
 
 " cocos2dx lua dictionary
 set dictionary+=~/github/maximum-awesome/cocoslua.dict
+noremap <C-h> <C-w>h
+noremap <C-j> <C-w>j
+noremap <C-k> <C-w>k
+noremap <C-l> <C-w>l
+noremap <leader>l :Align
+nnoremap <leader>a :Ag<space>
+nnoremap <leader>b :CtrlPBuffer<CR>
+nnoremap <leader>nd :NERDTreeToggle<CR>
+nnoremap <leader>f :NERDTreeFind<CR>
+nnoremap <leader>t :CtrlP<CR>
+nnoremap <leader>T :CtrlPClearCache<CR>:CtrlP<CR>
+nnoremap <leader>] :TagbarToggle<CR>
+nnoremap <leader><space> :call whitespace#strip_trailing()<CR>
+nnoremap <leader>g :GitGutterToggle<CR>
+nnoremap <leader>c <Plug>Kwbd
+noremap <silent> <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>
+
+" in case you forgot to sudo
+cnoremap w!! %!sudo tee > /dev/null %
 
 " the lua omni
 let g:lua_complete_omni = 1
@@ -312,6 +289,9 @@ else
   let &t_SI = "\<Esc>]50;CursorShape=1\x7"
   let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 endif
+
+" Don't copy the contents of an overwritten selection.
+vnoremap p "_dP
 
 " Go crazy!
 if filereadable(expand("~/.vimrc.local"))
