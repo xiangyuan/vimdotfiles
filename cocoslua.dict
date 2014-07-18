@@ -2720,14 +2720,26 @@ sp.SkeletonAnimation
 Action
 ActionCamera
 ActionEase
+ActionFadeFrame
+ActionFrame
 ActionInstant
 ActionInterval
 ActionManager
 ActionManagerEx
+ActionMoveFrame
 ActionObject
+ActionRotationFrame
+ActionScaleFrame
+ActionTimeline
+ActionTimelineCache
+ActionTimelineData
+ActionTintFrame
 ActionTween
+AnchorPointFrame
 Animate
+Animate3D
 Animation
+Animation3D
 AnimationCache
 AnimationData
 AnimationFrame
@@ -2760,6 +2772,7 @@ CatmullRomTo
 CheckBox
 CheckBoxEventType
 ClippingNode
+ColorFrame
 ComAttribute
 ComAudio
 ComController
@@ -2776,6 +2789,7 @@ ControlSaturationBrightnessPicker
 ControlSlider
 ControlStepper
 ControlSwitch
+Controller
 DelayTime
 Director
 DisplayData
@@ -2821,12 +2835,15 @@ EaseSineOut
 EditBox
 Event
 EventAcceleration
+EventController
 EventCustom
 EventDispatcher
 EventFocus
+EventFrame
 EventKeyboard
 EventListener
 EventListenerAcceleration
+EventListenerController
 EventListenerCustom
 EventListenerFocus
 EventListenerKeyboard
@@ -2853,6 +2870,7 @@ FlipX3D
 FlipY
 FlipY3D
 Follow
+Frame
 FrameData
 GLNode
 GLProgram
@@ -2865,11 +2883,13 @@ Grid3D
 Grid3DAction
 GridAction
 GridBase
+HBox
 Handler
 Helper
 Hide
 Image
 ImageView
+InnerActionFrame
 JumpBy
 JumpTiles3D
 JumpTo
@@ -2918,6 +2938,7 @@ MovementData
 MovementEventType
 Node
 NodeGrid
+NodeReader
 ObjectFactory
 OrbitCamera
 PVTouchDir
@@ -2967,6 +2988,7 @@ PhysicsShapeEdgeSegment
 PhysicsShapePolygon
 PhysicsWorld
 Place
+PositionFrame
 PositionType
 ProgressFromTo
 ProgressTimer
@@ -2974,6 +2996,7 @@ ProgressTo
 ProtectedNode
 Ref
 RelativeAlign
+RelativeBox
 RelativeLayoutParameter
 RemoveSelf
 RenderTexture
@@ -2989,8 +3012,11 @@ RichText
 Ripple3D
 RotateBy
 RotateTo
+RotationFrame
+RotationSkewFrame
 Scale9Sprite
 ScaleBy
+ScaleFrame
 ScaleTo
 Scene
 SceneReader
@@ -3011,6 +3037,7 @@ SizeType
 Skeleton
 SkeletonAnimation
 SkewBy
+SkewFrame
 SkewTo
 Skin
 Slider
@@ -3045,10 +3072,12 @@ TextType
 Texture2D
 TextureCache
 TextureData
+TextureFrame
 TextureResType
 TileMapAtlas
 TiledGrid3D
 TiledGrid3DAction
+Timeline
 Timer
 TintBy
 TintTo
@@ -3098,10 +3127,14 @@ TurnOffTiles
 Tween
 Twirl
 UserDefault
+VBox
+VideoPlayer
+VisibleFrame
 Waves
 Waves3D
 WavesTiles3D
 Widget
+ZOrderFrame
 gl
 global
 
@@ -3165,10 +3198,26 @@ ATC_RGB_AMD
 ATTACHED_SHADERS
 ActionCamera
 ActionCamera(self)
+ActionFadeFrame
+ActionFadeFrame(self)
+ActionFrame
+ActionFrame(self)
 ActionManager
 ActionManager(self)
+ActionMoveFrame
+ActionMoveFrame(self)
 ActionObject
 ActionObject(self)
+ActionRotationFrame
+ActionRotationFrame(self)
+ActionScaleFrame
+ActionScaleFrame(self)
+ActionTimeline
+ActionTimeline(self)
+ActionTintFrame
+ActionTintFrame(self)
+AnchorPointFrame
+AnchorPointFrame(self)
 AnimationCache
 AnimationCache(self)
 AnimationData
@@ -3339,6 +3388,8 @@ CardinalSplineTo
 CardinalSplineTo(self)
 CheckBox
 CheckBox(self)
+ColorFrame
+ColorFrame(self)
 ComController
 ComController(self)
 ContourData
@@ -3496,16 +3547,20 @@ EXT_texture_type_2_10_10_10_REV
 EXT_unpack_subimage
 EditBox
 EditBox(self)
+EventController
+EventController(self, int, cc.Controller, int)
 EventCustom
 EventCustom(self, string)
 EventDispatcher
 EventDispatcher(self)
 EventFocus
 EventFocus(self, ccui.Widget, ccui.Widget)
+EventFrame
+EventFrame(self)
 EventKeyboard
-EventKeyboard(self, cc.EventKeyboard::KeyCode, bool)
+EventKeyboard(self, int, bool)
 EventMouse
-EventMouse(self, cc.EventMouse::MouseEventType)
+EventMouse(self, int)
 EventTouch
 EventTouch(self)
 FALSE
@@ -3561,6 +3616,8 @@ GCCSO_SHADER_BINARY_FJ
 GENERATE_MIPMAP_HINT
 GEQUAL
 GLOW
+GLProgram
+GLProgram(self)
 GLProgramCache
 GLProgramCache(self)
 GL_NODE_DRAW
@@ -3571,6 +3628,8 @@ GUILTY_CONTEXT_RESET_EXT
 Grid3D
 Grid3D(self)
 HALF_FLOAT_OES
+HBox
+HBox(self)
 HIGH_FLOAT
 HIGH_INT
 HORIZONTAL
@@ -3601,6 +3660,8 @@ Image
 Image(self)
 ImageView
 ImageView(self)
+InnerActionFrame
+InnerActionFrame(self)
 KEEP
 KEYPAD
 KEY_0
@@ -3888,6 +3949,8 @@ NV_shadow_samplers_cube
 NV_texture_border_clamp
 NV_texture_compression_s3tc_update
 NV_texture_npot_2D_mipmaps
+NodeReader
+NodeReader(self)
 OBJECT_TYPE_APPLE
 OES_EGL_image
 OES_EGL_image_externals
@@ -3960,6 +4023,8 @@ PageView
 PageView(self)
 ParticleDisplayData
 ParticleDisplayData(self)
+PositionFrame
+PositionFrame(self)
 QCOM_alpha_test
 QCOM_binning_control
 QCOM_driver_control
@@ -4030,6 +4095,8 @@ RGBA8_OES
 RGB_422_APPLE
 RG_EXT
 RIGHT
+RelativeBox
+RelativeBox(self)
 RelativeLayoutParameter
 RelativeLayoutParameter(self)
 RenderTexture
@@ -4044,6 +4111,10 @@ RichElementText
 RichElementText(self)
 RichText
 RichText(self)
+RotationFrame
+RotationFrame(self)
+RotationSkewFrame
+RotationSkewFrame(self)
 SAMPLER
 SAMPLER_2D
 SAMPLER_2D_ARRAY_SHADOW_NV
@@ -4137,6 +4208,8 @@ SYNC_STATUS_APPLE
 SYSTEM
 Scale9Sprite
 Scale9Sprite(self)
+ScaleFrame
+ScaleFrame(self)
 Scheduler
 Scheduler(self)
 ScriptHandlerMgr
@@ -4144,6 +4217,8 @@ ScrollView
 ScrollView(self)
 ShaderCache
 ShaderCache(self)
+SkewFrame
+SkewFrame(self)
 Skin
 Skin(self)
 Slider
@@ -4264,16 +4339,16 @@ TextureCache
 TextureCache(self)
 TextureData
 TextureData(self)
+TextureFrame
+TextureFrame(self)
 TileMapAtlas
 TileMapAtlas(self)
 TiledGrid3D
 TiledGrid3D(self)
+Timeline
+Timeline(self)
 Touch
 Touch(self)
-TransitionPageTurn
-TransitionPageTurn(self)
-TransitionProgress
-TransitionProgress(self)
 Tween
 Tween(self)
 UNKNOWN
@@ -4300,6 +4375,8 @@ UNSIGNED_SHORT_5_6_5
 UNSIGNED_SHORT_8_8_APPLE
 UNSIGNED_SHORT_8_8_REV_APPLE
 VALIDATE_STATUS
+VBox
+VBox(self)
 VENDOR
 VERSION
 VERTEX_ARRAY_BINDING_OES
@@ -4318,6 +4395,8 @@ VERTEX_SHADER_BIT_EXT
 VERTICAL
 VIEWPORT
 VIV_shader_binary
+VisibleFrame
+VisibleFrame(self)
 WAIT_FAILED_APPLE
 WEBSOCKET_CLOSE
 WEBSOCKET_ERROR
@@ -4331,12 +4410,12 @@ Widget(self)
 XmlHttpRequest
 Z400_BINARY_AMD
 ZERO
+ZOrderFrame
+ZOrderFrame(self)
 _3DC_XY_AMD
 _3DC_X_AMD
 _acts
 _className
-_create
-_create(self, string, string, int, int, int)
 _enable
 _eventTriggers
 _fun
@@ -4373,22 +4452,21 @@ addAnimation
 addAnimation(self, cc.Animation, string)
 addAnimationData
 addAnimationData(self, string, ccs.AnimationData, string)
-addAnimations
-addAnimations(self, string)
 addAnimationsWithDictionary
 addAnimationsWithDictionary(self, map_table, string)
+addAnimationsWithFile
+addAnimationsWithFile(self, string)
 addArmatureData
 addArmatureData(self, string, ccs.ArmatureData, string)
 addArmatureFileInfo
 addArmatureFileInfo(self, string, string, string)
-addArmatureFileInfoAsyncCallFunc
-addArmatureFileInfoAsyncCallFunc(self, string, string, string, int)
 addBone
 addBone(self, ccs.Bone, string)
 addBoneData
 addBoneData(self, ccs.BoneData)
 addChild
 addChild(self, cc.Node, int, int)
+addChild(self, cc.Node, int, string)
 addChild(self, cc.Node, int, vec2_table, vec2_table)
 addChildBone
 addChildBone(self, ccs.Bone)
@@ -4403,7 +4481,7 @@ addDisplay(self, ccs.DisplayData, int)
 addDisplayData
 addDisplayData(self, ccs.DisplayData)
 addDocumentCallbackControlEvents
-addDocumentCallbackControlEvents(self, cc.Control::EventType)
+addDocumentCallbackControlEvents(self, int)
 addDocumentCallbackName
 addDocumentCallbackName(self, string)
 addDocumentCallbackNode
@@ -4414,16 +4492,12 @@ addDocumentOutletNode
 addDocumentOutletNode(self, cc.Node)
 addEventListener
 addEventListener(self, function)
-addEventListenerPageView
-addEventListenerPageView(self, int)
-addEventListenerSlider
-addEventListenerSlider(self, int)
-addEventListenerTextField
-addEventListenerTextField(self, int)
 addEventListenerWithFixedPriority
 addEventListenerWithFixedPriority(self, cc.EventListener, int)
 addEventListenerWithSceneGraphPriority
 addEventListenerWithSceneGraphPriority(self, cc.EventListener, cc.Node)
+addFrame
+addFrame(self, ccs.Frame)
 addFrameData
 addFrameData(self, ccs.FrameData)
 addGLProgram
@@ -4443,7 +4517,7 @@ addMovement(self, ccs.MovementData)
 addMovementBoneData
 addMovementBoneData(self, ccs.MovementBoneData)
 addOwnerCallbackControlEvents
-addOwnerCallbackControlEvents(self, cc.Control::EventType)
+addOwnerCallbackControlEvents(self, int)
 addOwnerOutletName
 addOwnerOutletName(self, string)
 addOwnerOutletNode
@@ -4457,9 +4531,9 @@ addProgram(self, cc.GLProgram, string)
 addProtectedChild
 addProtectedChild(self, cc.Node, int, int)
 addSearchPath
-addSearchPath(self, string)
+addSearchPath(self, string, bool)
 addSearchResolutionsOrder
-addSearchResolutionsOrder(self, string)
+addSearchResolutionsOrder(self, string, bool)
 addShape
 addShape(self, cc.PhysicsShape, bool)
 addSpriteFrame
@@ -4471,17 +4545,18 @@ addSpriteFrameWithFile
 addSpriteFrameWithFile(self, string)
 addSpriteFrameWithTexture
 addSpriteFrameWithTexture(self, cc.Texture2D, rect_table)
-addSpriteFrames
-addSpriteFrames(self, string, cc.Texture2D)
+addSpriteFramesWithFile
+addSpriteFramesWithFile(self, string, cc.Texture2D)
 addSpriteWithoutQuad
 addSpriteWithoutQuad(self, cc.Sprite, int, int)
 addSubItem
 addSubItem(self, cc.MenuItem)
 addTextureData
 addTextureData(self, string, ccs.TextureData, string)
+addTimeline
+addTimeline(self, ccs.Timeline)
 addTouchEventListener
 addTouchEventListener(self, function)
-addTouchEventListener(self, int)
 addVertex
 addVertex(self, vec2_table)
 addWidgetToPage
@@ -4492,10 +4567,6 @@ alignItemsHorizontally
 alignItemsHorizontally(self)
 alignItemsHorizontallyWithPadding
 alignItemsHorizontallyWithPadding(self, float)
-alignItemsInColumns
-alignItemsInColumns(self, value_vector)
-alignItemsInRows
-alignItemsInRows(self, value_vector)
 alignItemsVertically
 alignItemsVertically(self)
 alignItemsVerticallyWithPadding
@@ -4514,13 +4585,20 @@ angleInDegreesBetweenLineFromPoint_toPoint_toLineFromPoint_toPoint(self, vec2_ta
 appendChild
 appendChild(self, cc.Sprite)
 apply
-apply(self, cc.Mat4)
+apply(self, float)
+apply(self, mat4_table)
+applyAttributes
+applyAttributes(self)
 applyForce
 applyForce(self, vec2_table, vec2_table)
+applyGLProgram
+applyGLProgram(self, mat4_table)
 applyImpulse
 applyImpulse(self, vec2_table, vec2_table)
 applyTorque
 applyTorque(self, float)
+applyUniforms
+applyUniforms(self)
 atlasIndexForChild
 atlasIndexForChild(self, cc.Sprite, int)
 attachShader
@@ -4555,12 +4633,10 @@ bounceRight
 bounceTop
 calculateArea
 calculateArea(self, float)
-calculateArea(self, size_table)
 calculateDefaultMoment
 calculateDefaultMoment(self)
 calculateMoment
 calculateMoment(self, float, float, vec2_table)
-calculateMoment(self, float, size_table, vec2_table)
 calculateVertexPoints
 calculateVertexPoints(self)
 callStaticMethod
@@ -4623,8 +4699,6 @@ changeWidthAndHeight
 changeWidthAndHeight(self, float, float)
 checkAvailable
 checkAvailable(self)
-checkChildInfo
-checkChildInfo(self, int, ccui.Widget, vec2_table)
 checkUpdate
 checkUpdate(self)
 class
@@ -4636,19 +4710,19 @@ clear(self)
 clear(self, float, float, float, float)
 clearDepth
 clearDepth(self, float)
+clearFrameEventCallFunc
+clearFrameEventCallFunc(self)
 clearStencil
 clearStencil(self, int)
 clearTrack
 clearTrack(self)
 clearTracks
 clearTracks(self)
-clippingParentAreaContainPoint
-clippingParentAreaContainPoint(self, vec2_table)
 clone
 clone(Object)
 clone(self)
 colourSliderValueChanged
-colourSliderValueChanged(self, cc.Ref, cc.Control::EventType)
+colourSliderValueChanged(self, cc.Ref, int)
 compileShader
 compileShader(int)
 complete
@@ -4686,20 +4760,16 @@ copyProperties
 copyProperties(self, ccui.LayoutParameter)
 create
 create(self)
-create(self, array_table, array_table, array_table, array_table)
 create(self, array_table, float, unsigned)
 create(self, bool)
 create(self, cc.ActionInterval)
 create(self, cc.ActionInterval, float)
 create(self, cc.Animation)
-create(self, cc.FiniteTimeAction, cc.FiniteTimeAction)
-create(self, cc.FiniteTimeAction, cc.FiniteTimeAction, cc.FiniteTimeAction)
+create(self, cc.Animation3D, float, float)
 create(self, cc.FiniteTimeAction, unsigned)
 create(self, cc.GLProgram)
-create(self, cc.MenuItem, cc.MenuItem, cc.MenuItem)
 create(self, cc.Node)
 create(self, cc.Node, cc.FiniteTimeAction)
-create(self, cc.Node, cc.Node, cc.Node)
 create(self, cc.Node, char)
 create(self, cc.Node, rect_table)
 create(self, cc.Node, vec2_table)
@@ -4717,14 +4787,12 @@ create(self, char, char, char)
 create(self, char, char, char, function, function, function)
 create(self, color4b_table, color4b_table, vec2_table)
 create(self, color4b_table, float, float)
-create(self, double, vec2_table)
-create(self, double, vec2_table, double)
 create(self, float)
-create(self, float, cc.PhysicsMaterial, point_table)
+create(self, float, cc.PhysicsMaterial, vec2_table)
 create(self, float, cc.Scene)
 create(self, float, cc.Scene, bool)
-create(self, float, cc.Scene, cc.TransitionScene::Orientation)
 create(self, float, cc.Scene, color3b_table)
+create(self, float, cc.Scene, int)
 create(self, float, float)
 create(self, float, float, float)
 create(self, float, float, float, color3b_table, string)
@@ -4745,24 +4813,20 @@ create(self, float, unsigned)
 create(self, float, unsigned, unsigned, unsigned)
 create(self, float, vec2_table)
 create(self, float, vec2_table, float, int)
-create(self, function)
-create(self, function, table)
 create(self, int)
 create(self, int, color3b_table, unsigned, cc.Node)
 create(self, int, color3b_table, unsigned, string)
 create(self, int, color3b_table, unsigned, string, string, float)
-create(self, int, int, cc.Texture2D::PixelFormat, unsigned)
+create(self, int, int, int, unsigned)
 create(self, map_table)
-create(self, size_table, cc.Node)
+create(self, size_table)
 create(self, size_table, cc.PhysicsMaterial, float, vec2_table)
 create(self, size_table, cc.PhysicsMaterial, vec2_table)
 create(self, size_table, cc.Scale9Sprite, cc.Scale9Sprite, cc.Scale9Sprite)
 create(self, size_table, cc.Texture2D, bool)
 create(self, string)
 create(self, string, ccs.Bone)
-create(self, string, ccui.TextureResType)
 create(self, string, float)
-create(self, string, function)
 create(self, string, int)
 create(self, string, int, int, int)
 create(self, string, long)
@@ -4775,13 +4839,14 @@ create(self, string, string, float, cc.TextHAlignment, vec2_table)
 create(self, string, string, float, size_table, cc.TextHAlignment, cc.TextVAlignment)
 create(self, string, string, int)
 create(self, string, string, int, int)
+create(self, string, string, int, int, int)
 create(self, string, string, int, int, string)
-create(self, string, string, string)
-create(self, string, string, string, ccui.TextureResType)
-create(self, string, string, string, string, string, ccui.TextureResType)
+create(self, string, string, string, int)
+create(self, string, string, string, string, string, int)
 create(self, vec2_table)
 create(self, vec2_table, vec2_table, cc.PhysicsMaterial, float)
-create(self, vector_table)
+createAction
+createAction(self, string)
 createBox
 createBox(self, size_table, cc.PhysicsMaterial, vec2_table)
 createBuffer
@@ -4793,20 +4858,16 @@ createCloneInstance
 createCloneInstance(self)
 createEdgeBox
 createEdgeBox(self, size_table, cc.PhysicsMaterial, float, vec2_table)
-createEdgeChain
-createEdgeChain(self, vec2_table, materail_table, double)
-createEdgePolygon
-createEdgePolygon(self, vec2_table, materail_table, double)
 createEdgeSegment
 createEdgeSegment(self, vec2_table, vec2_table, cc.PhysicsMaterial, float)
 createFramebuffer
 createFramebuffer(int)
 createInstance
 createInstance(self)
+createNode
+createNode(self, string)
 createNodeWithSceneFile
-createNodeWithSceneFile(self, string, ccs.SceneReader::AttachComponentType)
-createPolygon
-createPolygon(self, vec2_table, materail_table, vec2_table)
+createNodeWithSceneFile(self, string, int)
 createProgram
 createRenderbuffer
 createRenderbuffer(int)
@@ -4814,13 +4875,11 @@ createShader
 createShader(int)
 createTexture
 createWithBMFont
-createWithBMFont(self, string, string, cc.TextHAlignment, int, vec2_table)
+createWithBMFont(self, string, string, int, int, vec2_table)
 createWithByteArrays
 createWithByteArrays(self, char, char)
 createWithCharMap
 createWithCharMap(self, string, int, int, int)
-createWithFile
-createWithFile(self, string, string, float)
 createWithFilenames
 createWithFilenames(self, string, string)
 createWithFontDefinition
@@ -4831,6 +4890,8 @@ createWithPhysics
 createWithPhysics(self)
 createWithRect
 createWithRect(self, string, rect_table, float)
+createWithSize
+createWithSize(self, size_table)
 createWithSpriteFrame
 createWithSpriteFrame(self, cc.SpriteFrame)
 createWithSpriteFrame(self, cc.SpriteFrame, rect_table)
@@ -4838,11 +4899,9 @@ createWithSpriteFrameName
 createWithSpriteFrameName(self, string)
 createWithSpriteFrameName(self, string, rect_table)
 createWithSpriteFrames
-createWithSpriteFrames(self, array_table, float, int)
+createWithSpriteFrames(self, array_table, float, unsigned)
 createWithSystemFont
-createWithSystemFont(self, string, string, float, size_table, cc.TextHAlignment, cc.TextVAlignment)
-createWithTTF
-createWithTTF(self, table, string, int, int)
+createWithSystemFont(self, string, string, float, size_table, int, int)
 createWithTexture
 createWithTexture(self, cc.Texture2D, int)
 createWithTexture(self, cc.Texture2D, long)
@@ -4893,12 +4952,14 @@ dispatchEvent
 dispatchEvent(self, cc.Event)
 distanceBetweenPointAndPoint
 distanceBetweenPointAndPoint(self, vec2_table, vec2_table)
+doLayout
+doLayout(self)
 doesAdjustBackgroundImage
 doesAdjustBackgroundImage(self)
 done
 down
 draw
-draw(self, cc.Renderer, cc.Mat4, bool)
+draw(self, cc.Renderer, mat4_table, unsigned)
 drawAtPoint
 drawAtPoint(self, vec2_table)
 drawContour
@@ -4909,8 +4970,6 @@ drawDot
 drawDot(self, vec2_table, float, color4f_table)
 drawInRect
 drawInRect(self, rect_table)
-drawPolygon
-drawPolygon(self, point_table, int, color4f_table, float)
 drawQuadraticBezier
 drawQuadraticBezier(self, vec2_table, vec2_table, vec2_table, unsigned, color4f_table)
 drawScene
@@ -4921,6 +4980,8 @@ drawTriangle
 drawTriangle(self, vec2_table, vec2_table, vec2_table, color4f_table)
 easeActionWithAction
 easeActionWithAction(self, cc.ActionInterval)
+enableDpadNavigation
+enableDpadNavigation(self, bool)
 enableGlow
 enableGlow(self, color4b_table)
 enableOutline
@@ -4938,8 +4999,7 @@ ended
 execute
 execute(self)
 findNextFocusedWidget
-findNextFocusedWidget(self, ccui.FocusDirection, ccui.Widget)
-findNextFocusedWidget(self, ccui.Widget::FocusDirection, ccui.Widget)
+findNextFocusedWidget(self, int, ccui.Widget)
 finish
 finish(self)
 flush
@@ -4954,6 +5014,9 @@ generateMipmap
 generateMipmap(self)
 get
 get(uint)
+getAction
+getAction(self, float)
+getAction(self, float, ccs.ActionFrame)
 getActionByName
 getActionByName(self, char, char)
 getActionByTag
@@ -4963,14 +5026,20 @@ getActionManager
 getActionManager(self)
 getActionTag
 getActionTag(self)
+getActionTimeline
+getActionTimeline(self)
 getActiveAttrib
 getActiveAttrib(int, int)
 getActiveUniform
 getActiveUniform(int, int)
+getAdditionalKerning
+getAdditionalKerning(self)
 getAlign
 getAlign(self)
 getAllBodies
 getAllBodies(self)
+getAlpha
+getAlpha(self)
 getAlphaThreshold
 getAlphaThreshold(self)
 getAmplitude
@@ -5005,6 +5074,8 @@ getAnimationDatas
 getAnimationDatas(self)
 getAnimationInterval
 getAnimationInterval(self)
+getAnimationManager
+getAnimationManager(self)
 getAnimationManagersForNodes
 getAnimationManagersForNodes(self)
 getArea
@@ -5060,7 +5131,7 @@ getBackgroundMusicVolume(self)
 getBackgroundSprite
 getBackgroundSprite(self)
 getBackgroundSpriteForState
-getBackgroundSpriteForState(self, cc.Control::State)
+getBackgroundSpriteForState(self, int)
 getBarChangeRate
 getBarChangeRate(self)
 getBatchNode
@@ -5068,7 +5139,7 @@ getBatchNode(self)
 getBitPerPixel
 getBitPerPixel(self)
 getBitsPerPixelForFormat
-getBitsPerPixelForFormat(self, cc.Texture2D::PixelFormat)
+getBitsPerPixelForFormat(self, int)
 getBlendFunc
 getBlendFunc(self)
 getBody
@@ -5144,8 +5215,6 @@ getCollisionBitmask
 getCollisionBitmask(self)
 getColor
 getColor(self)
-getCommonLineHeight
-getCommonLineHeight(self)
 getComponent
 getComponent(self, string)
 getConnectionTimeout
@@ -5166,6 +5235,12 @@ getContentSizeInPixels
 getContentSizeInPixels(self)
 getContourData
 getContourData(self, int)
+getController
+getController(self)
+getControllerByTag
+getControllerByTag(self, int)
+getControllerEventType
+getControllerEventType(self)
 getCurPageIndex
 getCurPageIndex(self)
 getCurSelectedIndex
@@ -5173,7 +5248,9 @@ getCurSelectedIndex(self)
 getCurrentDisplayIndex
 getCurrentDisplayIndex(self)
 getCurrentFocusedWidget
-getCurrentFocusedWidget(self, bool)
+getCurrentFocusedWidget(self)
+getCurrentFrame
+getCurrentFrame(self)
 getCurrentLanguage
 getCurrentLanguage(self)
 getCurrentLanguageCode
@@ -5198,8 +5275,6 @@ getCustomSize
 getCustomSize(self)
 getDamping
 getDamping(self)
-getData
-getData(self)
 getDebugDrawMask
 getDebugDrawMask(self)
 getDecorativeDisplayList
@@ -5219,14 +5294,16 @@ getDeltaTime
 getDeltaTime(self)
 getDensity
 getDensity(self)
-getDescendants
-getDescendants(self)
 getDescription
 getDescription(self)
 getDesignResolutionSize
 getDesignResolutionSize(self)
 getDetachWithIME
 getDetachWithIME(self)
+getDeviceId
+getDeviceId(self)
+getDeviceName
+getDeviceName(self)
 getDimensions
 getDimensions(self)
 getDirection
@@ -5267,6 +5344,8 @@ getDoubleForKey
 getDoubleForKey(self, char, double)
 getDuration
 getDuration(self)
+getEasingType
+getEasingType(self)
 getEffectsVolume
 getEffectsVolume(self)
 getElapsed
@@ -5279,6 +5358,8 @@ getEndColor
 getEndColor(self)
 getEndColorVar
 getEndColorVar(self)
+getEndFrame
+getEndFrame(self)
 getEndOpacity
 getEndOpacity(self)
 getEndRadius
@@ -5293,6 +5374,8 @@ getEndSpin
 getEndSpin(self)
 getEndSpinVar
 getEndSpinVar(self)
+getEvent
+getEvent(self)
 getEventCode
 getEventCode(self)
 getEventDispatcher
@@ -5304,6 +5387,8 @@ getEye
 getEye(self)
 getFile
 getFile(self)
+getFileName
+getFileName(self)
 getFilePath
 getFilePath(self)
 getFileType
@@ -5332,10 +5417,16 @@ getFragmentShaderLog
 getFragmentShaderLog(self)
 getFrameData
 getFrameData(self, int)
+getFrameIndex
+getFrameIndex(self)
 getFrameRate
 getFrameRate(self)
 getFrameSize
 getFrameSize(self)
+getFrameTime
+getFrameTime(self)
+getFrameType
+getFrameType(self)
 getFrames
 getFrames(self)
 getFriction
@@ -5388,6 +5479,8 @@ getIndexFormat
 getIndexFormat(self)
 getInnerAction
 getInnerAction(self)
+getInnerActionType
+getInnerActionType(self)
 getInnerContainer
 getInnerContainer(self)
 getInnerContainerSize
@@ -5416,8 +5509,10 @@ getItems
 getItems(self)
 getItemsMargin
 getItemsMargin(self)
-getJoints
-getJoints(self)
+getJsonPath
+getJsonPath(self)
+getKeyCode
+getKeyCode(self)
 getKeyframeCallbacks
 getKeyframeCallbacks(self)
 getLabel
@@ -5454,6 +5549,8 @@ getLife
 getLife(self)
 getLifeVar
 getLifeVar(self)
+getLineHeight
+getLineHeight(self)
 getLinearDamping
 getLinearDamping(self)
 getLocalZOrder
@@ -5472,14 +5569,12 @@ getMapSize
 getMapSize(self)
 getMapTileSize
 getMapTileSize(self)
-getMargin
-getMargin(self)
 getMass
 getMass(self)
 getMaterial
 getMaterial(self)
 getMatrix
-getMatrix(self, cc.MATRIX_STACK_TYPE)
+getMatrix(self, int)
 getMax
 getMax(self)
 getMaxForce
@@ -5514,8 +5609,6 @@ getMinusLabel
 getMinusLabel(self)
 getMinusSprite
 getMinusSprite(self)
-getMipmaps
-getMipmaps(self)
 getMoment
 getMoment(self)
 getMouseButton
@@ -5527,7 +5620,6 @@ getMovementBoneData(self, string)
 getMovementCount
 getMovementCount(self)
 getMusicVolume
-getMusicVolume(self)
 getName
 getName(self)
 getNode
@@ -5552,6 +5644,8 @@ getNodesWithAnimationManagers
 getNodesWithAnimationManagers(self)
 getNormalImage
 getNormalImage(self)
+getNormalizedPosition
+getNormalizedPosition(self)
 getNotificationNode
 getNotificationNode(self)
 getNumberOfMipmaps
@@ -5662,8 +5756,6 @@ getPoints
 getPoints(self)
 getPointsCount
 getPointsCount(self)
-getPolyonCenter
-getPolyonCenter(self, vec2_table)
 getPosVar
 getPosVar(self)
 getPosition
@@ -5696,7 +5788,6 @@ getPreviousLocationInView(self)
 getPrimitiveType
 getPrimitiveType(self)
 getProgram
-getProgram(self)
 getProgram(self, string)
 getProgramParameter
 getProgramParameter(int, int)
@@ -5862,11 +5953,16 @@ getSprite
 getSprite(self)
 getSpriteFrame
 getSpriteFrame(self)
-getSpriteFrame(self, string)
+getSpriteFrameByName
+getSpriteFrameByName(self, string)
 getStartColor
 getStartColor(self)
 getStartColorVar
 getStartColorVar(self)
+getStartFrame
+getStartFrame(self)
+getStartFrameIndex
+getStartFrameIndex(self)
 getStartLocation
 getStartLocation(self)
 getStartLocationInView
@@ -5905,7 +6001,6 @@ getStringForFormat(self)
 getStringForKey
 getStringForKey(self, char, string)
 getStringFromFile
-getStringFromFile(self)
 getStringFromFile(self, string)
 getStringLength
 getStringLength(self)
@@ -5961,14 +6056,14 @@ getTextureDatas
 getTextureDatas(self)
 getTextureForKey
 getTextureForKey(self, string)
+getTextureName
+getTextureName(self)
 getTextureRect
 getTextureRect(self)
 getThumbSprite
 getThumbSprite(self)
 getTileAt
 getTileAt(self, vec2_table)
-getTileGIDAt
-getTileGIDAt(self, vec2_table, cc.TMXTileFlags_)
 getTileProperties
 getTileProperties(self)
 getTileSet
@@ -5979,26 +6074,32 @@ getTilesets
 getTilesets(self)
 getTimeScale
 getTimeScale(self)
+getTimeSpeed
+getTimeSpeed(self)
+getTimeline
+getTimeline(self)
+getTimelines
+getTimelines(self)
 getTitleBMFontForState
-getTitleBMFontForState(self, cc.Control::State)
+getTitleBMFontForState(self, int)
 getTitleColor
 getTitleColor(self)
 getTitleColorForState
-getTitleColorForState(self, cc.Control::State)
+getTitleColorForState(self, int)
 getTitleFontName
 getTitleFontName(self)
 getTitleFontSize
 getTitleFontSize(self)
 getTitleForState
-getTitleForState(self, cc.Control::State)
+getTitleForState(self, int)
 getTitleLabel
 getTitleLabel(self)
 getTitleLabelForState
-getTitleLabelForState(self, cc.Control::State)
+getTitleLabelForState(self, int)
 getTitleTTFForState
-getTitleTTFForState(self, cc.Control::State)
+getTitleTTFForState(self, int)
 getTitleTTFSizeForState
-getTitleTTFSizeForState(self, cc.Control::State)
+getTitleTTFSizeForState(self, int)
 getTitleText
 getTitleText(self)
 getTopBoundary
@@ -6011,16 +6112,16 @@ getTotalParticles
 getTotalParticles(self)
 getTotalTime
 getTotalTime(self)
-getTouchEndPos
-getTouchEndPos(self)
+getTouchBeganPosition
+getTouchBeganPosition(self)
+getTouchEndPosition
+getTouchEndPosition(self)
 getTouchLocation
 getTouchLocation(self, cc.Touch)
-getTouchMovePos
-getTouchMovePos(self)
+getTouchMovePosition
+getTouchMovePosition(self)
 getTouchSize
 getTouchSize(self)
-getTouchStartPos
-getTouchStartPos(self)
 getTriggerObj
 getTriggerObj(uint)
 getTween
@@ -6029,17 +6130,14 @@ getTweenData
 getTweenData(self)
 getType
 getType(self)
-getType(self, cc.TextHAlignment)
+getURL
+getURL(self)
 getUniform
 getUniform(int, string)
-getUniform(self, string)
 getUniformCount
 getUniformCount(self)
 getUniformLocation
 getUniformLocation(int, string)
-getUniformLocation(self, string)
-getUniformLocationForName
-getUniformLocationForName(self, char)
 getUnitTime
 getUnitTime(self)
 getUp
@@ -6070,8 +6168,6 @@ getVersionFileUrl
 getVersionFileUrl(self)
 getVersionInteger
 getVersionInteger(self, char)
-getVertexAttrib
-getVertexAttrib(self, string)
 getVertexAttribCount
 getVertexAttribCount(self)
 getVertexAttribsFlags
@@ -6102,6 +6198,8 @@ getVisibleRect
 getVisibleRect(self)
 getVisibleSize
 getVisibleSize(self)
+getWeight
+getWeight(self)
 getWidth
 getWidth(self)
 getWinSize
@@ -6120,10 +6218,16 @@ getWorldToNodeTransform
 getWorldToNodeTransform(self)
 getWritablePath
 getWritablePath(self)
+getX
+getX(self)
 getXMLFilePath
 getXMLFilePath(self)
+getY
+getY(self)
 getZEye
 getZEye(self)
+getZOrder
+getZOrder(self)
 getZoomOnTouchDown
 getZoomOnTouchDown(self)
 getcolourPicker
@@ -6134,6 +6238,12 @@ gotoAndPause
 gotoAndPause(self, int)
 gotoAndPlay
 gotoAndPlay(self, int)
+gotoFrame
+gotoFrame(self, int)
+gotoFrameAndPause
+gotoFrameAndPause(self, int)
+gotoFrameAndPlay
+gotoFrameAndPlay(self, int, int, int, bool)
 gradient
 hasAlpha
 hasAlpha(self)
@@ -6154,11 +6264,10 @@ highestAtlasIndexInChild(self, cc.Sprite)
 highlight
 hitTest
 hitTest(self, cc.PhysicsShape, cc.PhysicsShape)
-hitTest(self, point_table)
 hitTest(self, vec2_table)
 horizontal
 hueSliderValueChanged
-hueSliderValueChanged(self, cc.Ref, cc.Control::EventType)
+hueSliderValueChanged(self, cc.Ref, int)
 ignore
 ignore(self)
 ignoreAnchorPointForPosition
@@ -6177,8 +6286,6 @@ init(self, int, color3b_table, unsigned, string)
 init(self, int, color3b_table, unsigned, string, string, float)
 init(self, string)
 init(self, string, ccs.Bone)
-initParticle
-initParticle(self, cc.sParticle)
 initWithBatchNode
 initWithBatchNode(self, cc.SpriteBatchNode, rect_table, bool, rect_table)
 initWithByteArrays
@@ -6193,15 +6300,13 @@ initWithFile(self, string, rect_table, rect_table)
 initWithFilenames
 initWithFilenames(self, string, string)
 initWithImage
-initWithImage(self, cc.Image, cc.Texture2D::PixelFormat)
+initWithImage(self, cc.Image, int)
 initWithImageFile
 initWithImageFile(self, string)
 initWithMaskSprite
 initWithMaskSprite(self, cc.Sprite, cc.Sprite, cc.Sprite, cc.Sprite, cc.Label, cc.Label)
 initWithMinusSpriteAndPlusSprite
 initWithMinusSpriteAndPlusSprite(self, cc.Sprite, cc.Sprite)
-initWithMipmaps
-initWithMipmaps(self, cc._MipmapInfo, int, cc.Texture2D::PixelFormat, int, int)
 initWithSize
 initWithSize(self, size_table, cc.Texture2D, bool)
 initWithSizeAndBackgroundSprite
@@ -6214,7 +6319,7 @@ initWithSpriteFrameName(self, string, rect_table)
 initWithSprites
 initWithSprites(self, cc.Sprite, cc.Sprite, cc.Sprite, cc.Sprite)
 initWithString
-initWithString(self, char, string, float, size_table, cc.TextHAlignment, cc.TextVAlignment)
+initWithString(self, char, string, float, size_table, int, int)
 initWithString(self, string, cc.Texture2D, int, int, int)
 initWithString(self, string, string, float, cc.TextHAlignment, vec2_table)
 initWithString(self, string, string, float, size_table, cc.TextHAlignment, cc.TextVAlignment)
@@ -6224,20 +6329,14 @@ initWithTMXFile
 initWithTMXFile(self, string)
 initWithTargetAndPos
 initWithTargetAndPos(self, cc.Node, vec2_table)
-initWithTexture
-initWithTexture(self, cc.Texture2D, rect_table, bool, vec2_table, size_table)
-initWithTextureFilename
-initWithTextureFilename(self, string, rect_table, bool, vec2_table, size_table)
 initWithTileFile
 initWithTileFile(self, string, string, int, int)
-initWithTilesetInfo
-initWithTilesetInfo(self, cc.TMXTilesetInfo, cc.TMXLayerInfo, cc.TMXMapInfo)
 initWithTrackSprite_ProgressTimer_ThumbSprite
 initWithTrackSprite_ProgressTimer_ThumbSprite(self, cc.Sprite, cc.ProgressTimer, cc.Sprite)
 initWithViewSize
 initWithViewSize(self, size_table, cc.Node)
 initWithWidthAndHeight
-initWithWidthAndHeight(self, int, int, cc.Texture2D::PixelFormat, unsigned)
+initWithWidthAndHeight(self, int, int, int, unsigned)
 initWithXML
 initWithXML(self, string, string)
 insertCellAtIndex
@@ -6250,6 +6349,8 @@ insertDefaultItem
 insertDefaultItem(self, long)
 insertElement
 insertElement(self, ccui.RichElement, int)
+insertFrame
+insertFrame(self, ccs.Frame, int)
 insertPage
 insertPage(self, ccui.Layout, int)
 insertQuadFromSprite
@@ -6287,12 +6388,16 @@ isClipMarginEnabled
 isClipMarginEnabled(self)
 isClippingEnabled
 isClippingEnabled(self)
+isClippingParentContainsPoint
+isClippingParentContainsPoint(self, vec2_table)
 isCollisionEnabled
 isCollisionEnabled(self)
 isCompressed
 isCompressed(self)
 isCompressedInterpolation
 isCompressedInterpolation(self)
+isConnected
+isConnected(self)
 isContinuous
 isContinuous(self)
 isDirty
@@ -6324,6 +6429,8 @@ isFrameDisplayed
 isFrameDisplayed(self, cc.SpriteFrame)
 isFull
 isFull(self)
+isFullScreenEnabled
+isFullScreenEnabled(self)
 isGravityEnabled
 isGravityEnabled(self)
 isHighlighted
@@ -6338,6 +6445,8 @@ isInertiaScrollEnabled
 isInertiaScrollEnabled(self)
 isInverted
 isInverted(self)
+isKeepAspectRatioEnabled
+isKeepAspectRatioEnabled(self)
 isLoop
 isLoop(self)
 isLoopFocus
@@ -6345,7 +6454,6 @@ isLoopFocus(self)
 isMaxLengthEnabled
 isMaxLengthEnabled(self)
 isMusicPlaying
-isMusicPlaying(self)
 isNextDeltaTimeZero
 isNextDeltaTimeZero(self)
 isOn
@@ -6368,6 +6476,8 @@ isPremultipliedAlpha
 isPremultipliedAlpha(self)
 isPushed
 isPushed(self)
+isRecordJsonPath
+isRecordJsonPath(self)
 isResting
 isResting(self)
 isReverseDirection
@@ -6406,6 +6516,8 @@ isTouchScaleChangeEnabled
 isTouchScaleChangeEnabled(self)
 isTransformDirty
 isTransformDirty(self)
+isTween
+isTween(self)
 isVisible
 isVisible(self)
 isXMLFileExist
@@ -6442,51 +6554,59 @@ listenOnFileDescriptor
 listenOnFileDescriptor(self, int)
 listenOnTCP
 listenOnTCP(self, int)
-load
-load(self, string, cc.Ref, size_table)
+listenRendererRecreated
+listenRendererRecreated(self, cc.EventCustom)
+loadAnimationActionWithContent
+loadAnimationActionWithContent(self, string, string)
+loadAnimationActionWithFile
+loadAnimationActionWithFile(self, string)
 loadBarTexture
-loadBarTexture(self, string, ccui.TextureResType)
+loadBarTexture(self, string, int)
 loadDefaultGLPrograms
 loadDefaultGLPrograms(self)
 loadDefaultShaders
 loadDefaultShaders(self)
-loadFilenameLookup
-loadFilenameLookup(self, string)
+loadFilenameLookupDictionaryFromFile
+loadFilenameLookupDictionaryFromFile(self, string)
 loadIdentityMatrix
-loadIdentityMatrix(self, cc.MATRIX_STACK_TYPE)
+loadIdentityMatrix(self, int)
 loadMatrix
-loadMatrix(self, cc.MATRIX_STACK_TYPE, cc.Mat4)
+loadMatrix(self, int, mat4_table)
+loadNodeWithContent
+loadNodeWithContent(self, string)
+loadNodeWithFile
+loadNodeWithFile(self, string)
 loadProgressBarTexture
-loadProgressBarTexture(self, string, ccui.TextureResType)
+loadProgressBarTexture(self, string, int)
 loadSlidBallTextureDisabled
-loadSlidBallTextureDisabled(self, string, ccui.TextureResType)
+loadSlidBallTextureDisabled(self, string, int)
 loadSlidBallTextureNormal
-loadSlidBallTextureNormal(self, string, ccui.TextureResType)
+loadSlidBallTextureNormal(self, string, int)
 loadSlidBallTexturePressed
-loadSlidBallTexturePressed(self, string, ccui.TextureResType)
+loadSlidBallTexturePressed(self, string, int)
 loadSlidBallTextures
-loadSlidBallTextures(self, string, string, string, ccui.TextureResType)
+loadSlidBallTextures(self, string, string, string, int)
 loadTexture
-loadTexture(self, string, ccui.TextureResType)
+loadTexture(self, string, int)
 loadTextureBackGround
-loadTextureBackGround(self, string, ccui.TextureResType)
+loadTextureBackGround(self, string, int)
 loadTextureBackGroundDisabled
-loadTextureBackGroundDisabled(self, string, ccui.TextureResType)
+loadTextureBackGroundDisabled(self, string, int)
 loadTextureBackGroundSelected
-loadTextureBackGroundSelected(self, string, ccui.TextureResType)
+loadTextureBackGroundSelected(self, string, int)
 loadTextureDisabled
-loadTextureDisabled(self, string, ccui.TextureResType)
+loadTextureDisabled(self, string, int)
 loadTextureFrontCross
-loadTextureFrontCross(self, string, ccui.TextureResType)
+loadTextureFrontCross(self, string, int)
 loadTextureFrontCrossDisabled
-loadTextureFrontCrossDisabled(self, string, ccui.TextureResType)
+loadTextureFrontCrossDisabled(self, string, int)
 loadTextureNormal
-loadTextureNormal(self, string, ccui.TextureResType)
+loadTextureNormal(self, string, int)
 loadTexturePressed
-loadTexturePressed(self, string, ccui.TextureResType)
+loadTexturePressed(self, string, int)
 loadTextures
-loadTextures(self, string, string, string, ccui.TextureResType)
-loadTextures(self, string, string, string, string, string, ccui.TextureResType)
+loadTextures(self, string, string, string, int)
+loadTextures(self, string, string, string, string, string, int)
 local2World
 local2World(self, vec2_table)
 localType
@@ -6515,7 +6635,7 @@ moveAnimationsFromNode
 moveAnimationsFromNode(self, cc.Node, cc.Node)
 moved
 multiplyMatrix
-multiplyMatrix(self, cc.MATRIX_STACK_TYPE, cc.Mat4)
+multiplyMatrix(self, int, mat4_table)
 needsLayout
 needsLayout(self)
 new
@@ -6524,14 +6644,14 @@ newImage
 newImage(self)
 none
 normal
-onAnimationStateEvent
-onAnimationStateEvent(self, int, spEventType, spEvent, int)
 onDraw
-onDraw(self, cc.Mat4, bool)
+onDraw(self, mat4_table, unsigned)
 onEnter
 onEnter(self)
 onExit
 onExit(self)
+onPlayEvent
+onPlayEvent(self, int)
 onTouchBegan
 onTouchBegan(self, cc.Touch, cc.Event)
 onTouchCancelled
@@ -6562,16 +6682,14 @@ pauseEffect(unsigned)
 pauseEventListenersForTarget
 pauseEventListenersForTarget(self, cc.Node, bool)
 pauseMusic
-pauseMusic(self)
 pauseTarget
 pauseTarget(self, cc.Node)
 percent
 percentChanged
 performWithDelay
 performWithDelay(cc.Node, function, float)
-placeTile
-placeTile(self, vec2_table, cc.Tile)
 play
+play(self)
 play(self, cc.CallFunc)
 play(self, ccs.MovementBoneData, int, int, int, int)
 play(self, string, int, int)
@@ -6585,7 +6703,6 @@ playEffect(self, char, bool, float, float, float)
 playEffect(string, bool)
 playMusic
 playMusic(char, bool)
-playMusic(self, char, bool)
 playWithIndex
 playWithIndex(self, int, int, int)
 playWithIndexes
@@ -6596,7 +6713,7 @@ plistType
 pollInputEvents
 pollInputEvents(self)
 popMatrix
-popMatrix(self, cc.MATRIX_STACK_TYPE)
+popMatrix(self, int)
 popScene
 popScene(self)
 popToRootScene
@@ -6618,7 +6735,8 @@ preloadEffect(char)
 preloadEffect(self, char)
 preloadMusic
 preloadMusic(char)
-preloadMusic(self, char)
+purge
+purge(self)
 purgeCachedData
 purgeCachedData(self)
 purgeCachedEntries
@@ -6630,15 +6748,9 @@ pushBackDefaultItem(self)
 pushBackElement
 pushBackElement(self, ccui.RichElement)
 pushMatrix
-pushMatrix(self, cc.MATRIX_STACK_TYPE)
+pushMatrix(self, int)
 pushScene
 pushScene(self, cc.Scene)
-queryPoint
-queryPoint(self, int, vec2_table)
-queryRect
-queryRect(self, int, rect_table)
-rayCast
-rayCast(self, int, vec2_table, vec2_table)
 readCCBFromFile
 readCCBFromFile(self, string, cc.CCBReader, bool)
 readCallbackKeyframesForSeq
@@ -6649,23 +6761,12 @@ readUTF8
 readUTF8(self)
 rebuildIndexInOrder
 rebuildIndexInOrder(self, cc.Sprite, long)
-recenterPoints
-recenterPoints(self, vec2_table, vec2_table)
+receiveExternalKeyEvent
+receiveExternalKeyEvent(self, int, bool)
 rect
 rect(self)
 refreshView
 refreshView(self)
-registerControlEventHandler
-registerControlEventHandler(self, function, int)
-registerScriptEditBoxHandleR
-registerScriptEditBoxHandleR(self, function)
-registerScriptHandler
-registerScriptHandler(self, function)
-registerScriptHandler(self, function, int)
-registerScriptTapHandler
-registerScriptTapHandler(self, function)
-registerSpineEventHandler
-registerSpineEventHandler(self, int)
 registerType
 registerType(table)
 relative
@@ -6673,6 +6774,8 @@ release
 release(self)
 releaseActions
 releaseActions(self)
+releaseGLTexture
+releaseGLTexture(self)
 releaseMap
 releaseMap(self)
 reloadData
@@ -6687,6 +6790,7 @@ remove
 remove(uint, ccs.TriggerObj)
 removeAction
 removeAction(self, cc.Action)
+removeAction(self, string)
 removeActionByTag
 removeActionByTag(self, int, cc.Node)
 removeActionNode
@@ -6700,7 +6804,6 @@ removeAllBodies
 removeAllBodies(self)
 removeAllChildren
 removeAllChildren(self)
-removeAllChildren(self, bool)
 removeAllChildrenWithCleanup
 removeAllChildrenWithCleanup(self, bool)
 removeAllComponents
@@ -6744,6 +6847,8 @@ removeChildAtIndex(self, int, bool)
 removeChildAtIndex(self, long, bool)
 removeChildBone
 removeChildBone(self, ccs.Bone, bool)
+removeChildByName
+removeChildByName(self, string, bool)
 removeChildByTag
 removeChildByTag(self, int, bool)
 removeComponent
@@ -6759,11 +6864,15 @@ removeEventListener(self, cc.EventListener)
 removeEventListenersForTarget
 removeEventListenersForTarget(self, cc.Node, bool)
 removeEventListenersForType
-removeEventListenersForType(self, cc.EventListener::Type)
+removeEventListenersForType(self, int)
 removeFormWorld
 removeFormWorld(self)
+removeFrame
+removeFrame(self, ccs.Frame)
 removeFromParent
 removeFromParent(self, bool)
+removeFromParentAndCleanup
+removeFromParentAndCleanup(self, bool)
 removeFromWorld
 removeFromWorld(self)
 removeItem
@@ -6802,6 +6911,8 @@ removeTextureForKey
 removeTextureForKey(self, string)
 removeTileAt
 removeTileAt(self, vec2_table)
+removeTimeline
+removeTimeline(self, ccs.Timeline)
 removeTriggerObj
 removeTriggerObj(uint)
 removeUnusedSpriteFrames
@@ -6847,7 +6958,6 @@ resumeEffect(unsigned)
 resumeEventListenersForTarget
 resumeEventListenersForTarget(self, cc.Node, bool)
 resumeMusic
-resumeMusic(self)
 resumeTarget
 resumeTarget(self, cc.Node)
 resumeTargets
@@ -6858,11 +6968,9 @@ reuse
 reuse(self)
 reverse
 reverse(self)
-reverse(self, function)
 rewindBackgroundMusic
 rewindBackgroundMusic(self)
 rewindMusic
-rewindMusic(self)
 right
 runAction
 runAction(self, cc.Action)
@@ -6876,15 +6984,11 @@ runWithScene
 runWithScene(self, cc.Scene)
 saveToFile
 saveToFile(self, string, bool)
-saveToFile(self, string, cc.Image::Format)
+saveToFile(self, string, int, bool)
 sceneReaderVersion
 sceneReaderVersion(self)
 schedule
 schedule(cc.Node, function, float)
-scheduleScriptFunc
-scheduleScriptFunc(self, function, float, bool)
-scheduleUpdateWithPriorityLua
-scheduleUpdateWithPriorityLua(self, function, int)
 scrollToBottom
 scrollToBottom(self, float, bool)
 scrollToBottomLeft
@@ -6916,6 +7020,8 @@ scrollViewDidZoom(self, cc.ScrollView)
 scrolling
 seekActionWidgetByActionTag
 seekActionWidgetByActionTag(self, ccui.Widget, int)
+seekTo
+seekTo(self, float)
 seekWidgetByName
 seekWidgetByName(self, ccui.Widget, string)
 seekWidgetByTag
@@ -6923,7 +7029,7 @@ seekWidgetByTag(self, ccui.Widget, int)
 selected
 selected(self)
 sendActionsForControlEvents
-sendActionsForControlEvents(self, cc.Control::EventType)
+sendActionsForControlEvents(self, int)
 serialize
 serialize(self, void)
 serialize(table)
@@ -6931,22 +7037,27 @@ set2DProjection
 set2DProjection(self)
 setActionManager
 setActionManager(self, cc.ActionManager)
-setActionManager(self, cc.CCBAnimationManager)
 setActionTag
 setActionTag(self, int)
+setActionTimeline
+setActionTimeline(self, ccs.ActionTimeline)
 setActive
 setActive(self, bool)
+setAdditionalKerning
+setAdditionalKerning(self, float)
 setAdditionalTransform
-setAdditionalTransform(self, cc.Mat4)
+setAdditionalTransform(self, mat4_table)
 setAdjustBackgroundImage
 setAdjustBackgroundImage(self, bool)
 setAliasTexParameters
 setAliasTexParameters(self)
 setAlign
-setAlign(self, ccui.RelativeAlign)
+setAlign(self, int)
 setAlignment
 setAlignment(self, cc.TextHAlignment)
-setAlignment(self, cc.TextHAlignment, cc.TextVAlignment)
+setAlignment(self, int, int)
+setAlpha
+setAlpha(self, unsigned)
 setAlphaBlending
 setAlphaBlending(self, bool)
 setAlphaThreshold
@@ -6956,7 +7067,6 @@ setAmplitude(self, float)
 setAmplitudeRate
 setAmplitudeRate(self, float)
 setAnchorPoint
-setAnchorPoint(self, float, float)
 setAnchorPoint(self, vec2_table)
 setAnchr1
 setAnchr1(self, vec2_table)
@@ -6979,6 +7089,8 @@ setAnimationData
 setAnimationData(self, ccs.AnimationData)
 setAnimationInterval
 setAnimationInterval(self, double)
+setAnimationManager
+setAnimationManager(self, cc.CCBAnimationManager)
 setAntiAliasTexParameters
 setAntiAliasTexParameters(self)
 setArmature
@@ -7003,11 +7115,11 @@ setBackGroundColor(self, color3b_table, color3b_table)
 setBackGroundColorOpacity
 setBackGroundColorOpacity(self, unsigned)
 setBackGroundColorType
-setBackGroundColorType(self, ccui.LayoutBackGroundColorType)
+setBackGroundColorType(self, int)
 setBackGroundColorVector
 setBackGroundColorVector(self, vec2_table)
 setBackGroundImage
-setBackGroundImage(self, string, ccui.TextureResType)
+setBackGroundImage(self, string, int)
 setBackGroundImageCapInsets
 setBackGroundImageCapInsets(self, rect_table)
 setBackGroundImageColor
@@ -7024,9 +7136,9 @@ setBackgroundSprite
 setBackgroundSprite(self, cc.Scale9Sprite)
 setBackgroundSprite(self, cc.Sprite)
 setBackgroundSpriteForState
-setBackgroundSpriteForState(self, cc.Scale9Sprite, cc.Control::State)
+setBackgroundSpriteForState(self, cc.Scale9Sprite, int)
 setBackgroundSpriteFrameForState
-setBackgroundSpriteFrameForState(self, cc.SpriteFrame, cc.Control::State)
+setBackgroundSpriteFrameForState(self, cc.SpriteFrame, int)
 setBarChangeRate
 setBarChangeRate(self, vec2_table)
 setBaseValue
@@ -7043,7 +7155,6 @@ setBlendDirty
 setBlendDirty(self, bool)
 setBlendFunc
 setBlendFunc(self, cc.BlendFunc)
-setBlendFunc(self, int, int)
 setBone
 setBone(self, ccs.Bone)
 setBoneData
@@ -7061,11 +7172,9 @@ setBounceEnabled(self, bool)
 setBright
 setBright(self, bool)
 setBrightStyle
-setBrightStyle(self, ccui.BrightStyle)
+setBrightStyle(self, int)
 setCCBRootPath
 setCCBRootPath(self, char)
-setCallFuncForLuaCallbackNamed
-setCallFuncForLuaCallbackNamed(self, cc.CallFunc, String)
 setCallback
 setCallback(self, cc.Node, int, int)
 setCapInsetProgressBarRebderer
@@ -7105,7 +7214,7 @@ setClipMarginEnabled(self, bool)
 setClippingEnabled
 setClippingEnabled(self, bool)
 setClippingType
-setClippingType(self, ccui.LayoutClippingType)
+setClippingType(self, int)
 setCollisionBitmask
 setCollisionBitmask(self, int)
 setCollisionEnable
@@ -7117,6 +7226,8 @@ setCompressedInterpolation
 setCompressedInterpolation(self, bool)
 setConcave
 setConcave(self, bool)
+setConnectStatus
+setConnectStatus(self, bool)
 setConnectionTimeout
 setConnectionTimeout(self, unsigned)
 setContactTestBitmask
@@ -7124,8 +7235,9 @@ setContactTestBitmask(self, int)
 setContentScaleFactor
 setContentScaleFactor(self, float)
 setContentSize
-setContentSize(self, float, float)
 setContentSize(self, size_table)
+setCurrentFrame
+setCurrentFrame(self, int)
 setCurrentString
 setCurrentString(self, string)
 setCurrentTime
@@ -7134,24 +7246,16 @@ setCursorPosition
 setCursorPosition(self, float, float)
 setDamping
 setDamping(self, float)
-setDataSource
-setDataSource(self)
-setDebugBones
-setDebugBones(self, bool)
 setDebugDrawMask
 setDebugDrawMask(self, int)
-setDebugSlots
-setDebugSlots(self, bool)
 setDefaultAlphaPixelFormat
-setDefaultAlphaPixelFormat(self, cc.Texture2D::PixelFormat)
+setDefaultAlphaPixelFormat(self, int)
 setDefaultValues
 setDefaultValues(self)
 setDelayPerUnit
 setDelayPerUnit(self, float)
 setDelayUnits
 setDelayUnits(self, float)
-setDelegate
-setDelegate(self)
 setDeleteBackward
 setDeleteBackward(self, bool)
 setDensity
@@ -7159,15 +7263,14 @@ setDensity(self, float)
 setDepthTest
 setDepthTest(self, bool)
 setDesignResolutionSize
-setDesignResolutionSize(self, float, float, ResolutionPolicy)
+setDesignResolutionSize(self, float, float, int)
 setDetachWithIME
 setDetachWithIME(self, bool)
 setDimensions
 setDimensions(self, size_table)
 setDimensions(self, unsigned, unsigned)
 setDirection
-setDirection(self, ccui.LoadingBarType)
-setDirection(self, ccui.SCROLLVIEW_DIR)
+setDirection(self, int)
 setDirty
 setDirty(self, bool)
 setDisabledColor
@@ -7190,15 +7293,20 @@ setDoubleForKey
 setDoubleForKey(self, char, double)
 setDuration
 setDuration(self, float)
+setDuration(self, int)
 setDynamic
 setDynamic(self, bool)
+setEasingParameter
+setEasingParameter(self, array_table)
+setEasingType
+setEasingType(self, int)
 setEffectsVolume
 setEffectsVolume(float)
 setEffectsVolume(self, float)
 setEmissionRate
 setEmissionRate(self, float)
 setEmitterMode
-setEmitterMode(self, cc.ParticleSystem::Mode)
+setEmitterMode(self, int)
 setEnable
 setEnable(bool)
 setEnable(self, bool)
@@ -7223,8 +7331,10 @@ setEndSpin
 setEndSpin(self, float)
 setEndSpinVar
 setEndSpinVar(self, float)
+setEvent
+setEvent(self, string)
 setEventCode
-setEventCode(self, cc.EventTouch::EventCode)
+setEventCode(self, int)
 setEventDispatcher
 setEventDispatcher(self, cc.EventDispatcher)
 setEye
@@ -7233,6 +7343,10 @@ setFastMode
 setFastMode(self, bool)
 setFile
 setFile(self, char)
+setFileName
+setFileName(self, string)
+setFilePath
+setFilePath(self, string)
 setFilenameLookupDictionary
 setFilenameLookupDictionary(self, map_table)
 setFlippedX
@@ -7271,13 +7385,22 @@ setForceChangeDisplay(self, bool)
 setForcedTarget
 setForcedTarget(self, cc.Node)
 setFrameEventCallFunc
-setFrameEventCallFunc(self, int)
+setFrameEventCallFunc(self, function)
+setFrameIndex
+setFrameIndex(self, int)
+setFrameIndex(self, unsigned)
 setFrameSize
 setFrameSize(self, float, float)
+setFrameTime
+setFrameTime(self, float)
+setFrameType
+setFrameType(self, int)
 setFrames
 setFrames(self, array_table)
 setFriction
 setFriction(self, float)
+setFullScreenEnabled
+setFullScreenEnabled(self, bool)
 setGLDefaultValues
 setGLDefaultValues(self)
 setGLProgram
@@ -7287,8 +7410,7 @@ setGLProgramState(self, cc.GLProgramState)
 setGlobalZOrder
 setGlobalZOrder(self, float)
 setGravity
-setGravity(self, ccui.LinearGravity)
-setGravity(self, ccui.ListViewGravity)
+setGravity(self, int)
 setGravity(self, vec2_table)
 setGravityEnable
 setGravityEnable(self, bool)
@@ -7310,6 +7432,7 @@ setHighlighted
 setHighlighted(self, bool)
 setHorizontalAlignment
 setHorizontalAlignment(self, cc.TextHAlignment)
+setHorizontalAlignment(self, int)
 setHue
 setHue(self, float)
 setHuePercentage
@@ -7325,12 +7448,14 @@ setInertiaScrollEnabled(self, bool)
 setInnerAction
 setInnerAction(self, cc.ActionInterval)
 setInnerAction(self, cc.FiniteTimeAction)
+setInnerActionType
+setInnerActionType(self, int)
 setInnerContainerSize
 setInnerContainerSize(self, size_table)
 setInputFlag
-setInputFlag(self, cc.EditBox::InputFlag)
+setInputFlag(self, int)
 setInputMode
-setInputMode(self, cc.EditBox::InputMode)
+setInputMode(self, int)
 setInsertText
 setInsertText(self, bool)
 setInsetBottom
@@ -7353,8 +7478,14 @@ setItemModel
 setItemModel(self, ccui.Widget)
 setItemsMargin
 setItemsMargin(self, float)
+setJsonPath
+setJsonPath(self, string)
+setKeepAspectRatioEnabled
+setKeepAspectRatioEnabled(self, bool)
 setKeepMatrix
 setKeepMatrix(self, bool)
+setKeyCode
+setKeyCode(self, int)
 setLabel
 setLabel(self, cc.Node)
 setLabelAnchorPoint
@@ -7372,7 +7503,7 @@ setLayers(self, array_table)
 setLayoutParameter
 setLayoutParameter(self, ccui.LayoutParameter)
 setLayoutType
-setLayoutType(self, ccui.LayoutType)
+setLayoutType(self, int)
 setLensEffect
 setLensEffect(self, float)
 setLife
@@ -7381,6 +7512,8 @@ setLifeVar
 setLifeVar(self, float)
 setLineBreakWithoutSpace
 setLineBreakWithoutSpace(self, bool)
+setLineHeight
+setLineHeight(self, float)
 setLinearDamping
 setLinearDamping(self, float)
 setLocalZOrder
@@ -7397,8 +7530,6 @@ setMapSize
 setMapSize(self, size_table)
 setMapTileSize
 setMapTileSize(self, size_table)
-setMargin
-setMargin(self, margin_table)
 setMargins
 setMargins(self, int, int)
 setMass
@@ -7443,11 +7574,8 @@ setMoment
 setMoment(self, float)
 setMouseButton
 setMouseButton(self, int)
-setMovementEventCallFunc
-setMovementEventCallFunc(self, int)
 setMusicVolume
 setMusicVolume(float)
-setMusicVolume(self, float)
 setName
 setName(self, char)
 setName(self, string)
@@ -7456,11 +7584,13 @@ setNextDeltaTimeZero(self, bool)
 setNode
 setNode(self, cc.Node)
 setNodeToParentTransform
-setNodeToParentTransform(self, cc.Mat4)
+setNodeToParentTransform(self, mat4_table)
 setNormalImage
 setNormalImage(self, cc.Node)
 setNormalSpriteFrame
 setNormalSpriteFrame(self, cc.SpriteFrame)
+setNormalizedPosition
+setNormalizedPosition(self, vec2_table)
 setNotificationNode
 setNotificationNode(self, cc.Node)
 setObject
@@ -7475,7 +7605,12 @@ setOffsetInPixels
 setOffsetInPixels(self, vec2_table)
 setOn
 setOn(self, bool, bool)
+setOnEnterCallback
+setOnEnterCallback(self, function)
+setOnExitCallback
+setOnExitCallback(self, function)
 setOpacity
+setOpacity(self, int)
 setOpacity(self, unsigned)
 setOpacityModifyRGB
 setOpacityModifyRGB(self, bool)
@@ -7495,8 +7630,6 @@ setOwner
 setOwner(self, cc.Node)
 setPackageUrl
 setPackageUrl(self, char)
-setParallaxArray
-setParallaxArray(self, cc._ccArray)
 setParent
 setParent(self, cc.Node)
 setParentBone
@@ -7551,8 +7684,7 @@ setPositionOffset(self, vec2_table)
 setPositionPercent
 setPositionPercent(self, vec2_table)
 setPositionType
-setPositionType(self, cc.ParticleSystem::PositionType)
-setPositionType(self, ccui.PositionType)
+setPositionType(self, int)
 setPositionX
 setPositionX(self, float)
 setPositionY
@@ -7561,8 +7693,6 @@ setPositionZ
 setPositionZ(self, float)
 setPreferredSize
 setPreferredSize(self, size_table)
-setPremultipliedAlpha
-setPremultipliedAlpha(self, bool)
 setPressedActionEnabled
 setPressedActionEnabled(self, bool)
 setPreviousLocation
@@ -7574,7 +7704,7 @@ setProgressSprite(self, cc.Sprite)
 setProgressTimer
 setProgressTimer(self, cc.ProgressTimer)
 setProjection
-setProjection(self, cc.Director::Projection)
+setProjection(self, int)
 setProperties
 setProperties(self, map_table)
 setProperty
@@ -7591,6 +7721,8 @@ setRate
 setRate(self, float)
 setRatio
 setRatio(self, float)
+setRecordJsonPath
+setRecordJsonPath(self, bool)
 setRect
 setRect(self, rect_table)
 setRectInPixels
@@ -7612,7 +7744,7 @@ setRestitution(self, float)
 setRestoreOriginalFrame
 setRestoreOriginalFrame(self, bool)
 setReturnType
-setReturnType(self, cc.EditBox::KeyboardReturnType)
+setReturnType(self, int)
 setReuseGrid
 setReuseGrid(self, int)
 setReverseAction
@@ -7682,12 +7814,10 @@ setSequences
 setSequences(self, array_table)
 setShaderProgram
 setShaderProgram(self, GLProgram)
-setSize
-setSize(self, size_table)
 setSizePercent
 setSizePercent(self, vec2_table)
 setSizeType
-setSizeType(self, ccui.SizeType)
+setSizeType(self, int)
 setSkewX
 setSkewX(self, float)
 setSkewY
@@ -7716,6 +7846,8 @@ setStartColor(self, color3b_table)
 setStartColor(self, color4f_table)
 setStartColorVar
 setStartColorVar(self, color4f_table)
+setStartFrameIndex
+setStartFrameIndex(self, int)
 setStartOpacity
 setStartOpacity(self, unsigned)
 setStartRadius
@@ -7759,13 +7891,10 @@ setSystemFontName
 setSystemFontName(self, string)
 setSystemFontSize
 setSystemFontSize(self, float)
-setTGAInfo
-setTGAInfo(self, cc.sImageTGA)
 setTMXFileName
 setTMXFileName(self, string)
 setTTFConfig
 setTTFConfig(self, cc._ttfConfig)
-setTTFConfig(self, table)
 setTag
 setTag(self, int)
 setTangentialAccel
@@ -7777,8 +7906,6 @@ setTarget(self, cc.Node)
 setTarget(self, function)
 setTargetCallback
 setTargetCallback(self, cc.Ref)
-setTexParameters
-setTexParameters(self, int, int, int, int)
 setText
 setText(self, char)
 setText(self, string)
@@ -7789,9 +7916,9 @@ setTextColor(self, color4b_table)
 setTextDefinition
 setTextDefinition(self, cc.FontDefinition)
 setTextHorizontalAlignment
-setTextHorizontalAlignment(self, cc.TextHAlignment)
+setTextHorizontalAlignment(self, int)
 setTextVerticalAlignment
-setTextVerticalAlignment(self, cc.TextVAlignment)
+setTextVerticalAlignment(self, int)
 setTexture
 setTexture(self, cc.Texture2D)
 setTexture(self, string)
@@ -7799,6 +7926,8 @@ setTextureAtlas
 setTextureAtlas(self, cc.TextureAtlas)
 setTextureFlipped
 setTextureFlipped(self, bool)
+setTextureName
+setTextureName(self, string)
 setTextureRect
 setTextureRect(self, rect_table)
 setTextureRect(self, rect_table, bool, size_table)
@@ -7809,39 +7938,41 @@ setThumbSprite(self, cc.Sprite)
 setTile
 setTile(self, color3b_table, vec2_table)
 setTileGID
-setTileGID(self, unsigned, vec2_table, cc.TMXTileFlags_)
+setTileGID(self, int, vec2_table, int)
 setTileProperties
 setTileProperties(self, map_table)
 setTileSet
 setTileSet(self, cc.TMXTilesetInfo)
 setTileSize
 setTileSize(self, size_table)
-setTiles
-setTiles(self, unsigned)
 setTilesets
 setTilesets(self, array_table)
 setTimeScale
 setTimeScale(self, float)
+setTimeSpeed
+setTimeSpeed(self, float)
+setTimeline
+setTimeline(self, ccs.Timeline)
 setTitleBMFontForState
-setTitleBMFontForState(self, string, cc.Control::State)
+setTitleBMFontForState(self, string, int)
 setTitleColor
 setTitleColor(self, color3b_table)
 setTitleColorForState
-setTitleColorForState(self, color3b_table, cc.Control::State)
+setTitleColorForState(self, color3b_table, int)
 setTitleFontName
 setTitleFontName(self, string)
 setTitleFontSize
 setTitleFontSize(self, float)
 setTitleForState
-setTitleForState(self, string, cc.Control::State)
+setTitleForState(self, string, int)
 setTitleLabel
 setTitleLabel(self, cc.Node)
 setTitleLabelForState
-setTitleLabelForState(self, cc.Node, cc.Control::State)
+setTitleLabelForState(self, cc.Node, int)
 setTitleTTFForState
-setTitleTTFForState(self, string, cc.Control::State)
+setTitleTTFForState(self, string, int)
 setTitleTTFSizeForState
-setTitleTTFSizeForState(self, float, cc.Control::State)
+setTitleTTFSizeForState(self, float, int)
 setTitleText
 setTitleText(self, string)
 setToSetupPose
@@ -7860,38 +7991,22 @@ setTouchSize
 setTouchSize(self, size_table)
 setTransformDirty
 setTransformDirty(self, bool)
+setTween
+setTween(self, bool)
 setType
-setType(self, cc.ProgressTimer::Type)
+setType(self, int)
+setURL
+setURL(self, string)
 setUniformFloat
 setUniformFloat(self, string, float)
 setUniformInt
 setUniformInt(self, string, int)
-setUniformLocationF32
-setUniformLocationF32(self, int, float, float, float, float)
-setUniformLocationI32
-setUniformLocationI32(self, int, int)
-setUniformLocationWith2i
-setUniformLocationWith2i(self, int, int, int)
-setUniformLocationWith2iv
-setUniformLocationWith2iv(self, int, int, unsigned)
-setUniformLocationWith3i
-setUniformLocationWith3i(self, int, int, int, int)
-setUniformLocationWith3iv
-setUniformLocationWith3iv(self, int, int, unsigned)
-setUniformLocationWith4i
-setUniformLocationWith4i(self, int, int, int, int, int)
-setUniformLocationWith4iv
-setUniformLocationWith4iv(self, int, int, unsigned)
-setUniformLocationWithMatrix2fv
-setUniformLocationWithMatrix2fv(self, int, float, unsigned)
-setUniformLocationWithMatrix3fv
-setUniformLocationWithMatrix3fv(self, int, float, unsigned)
-setUniformLocationWithMatrix4fv
-setUniformLocationWithMatrix4fv(self, int, float, unsigned)
+setUniformLocationWith1i
+setUniformLocationWith1i(self, int, int)
 setUniformMat4
-setUniformMat4(self, string, cc.Mat4)
+setUniformMat4(self, string, mat4_table)
 setUniformTexture
-setUniformTexture(self, string, cc.Texture2D)
+setUniformTexture(self, int, unsigned)
 setUniformVec2
 setUniformVec2(self, string, vec2_table)
 setUniformVec3
@@ -7899,7 +8014,7 @@ setUniformVec3(self, string, vec3_table)
 setUniformVec4
 setUniformVec4(self, string, vec4_table)
 setUniformsForBuiltins
-setUniformsForBuiltins(self, cc.Mat4)
+setUniformsForBuiltins(self, mat4_table)
 setUnitTime
 setUnitTime(self, float)
 setUp
@@ -7929,8 +8044,9 @@ setVertexRect
 setVertexRect(self, rect_table)
 setVerticalAlignment
 setVerticalAlignment(self, cc.TextVAlignment)
+setVerticalAlignment(self, int)
 setVerticalFillOrder
-setVerticalFillOrder(self, cc.TableView::VerticalFillOrder)
+setVerticalFillOrder(self, int)
 setVerticalSpace
 setVerticalSpace(self, float)
 setViewName
@@ -7943,23 +8059,35 @@ setVirtualViewport
 setVirtualViewport(self, vec2_table, rect_table, rect_table)
 setVisible
 setVisible(self, bool)
+setWeight
+setWeight(self, float)
 setWidth
 setWidth(self, float)
 setWidth(self, unsigned)
 setWraps
 setWraps(self, bool)
+setX
+setX(self, float)
+setY
+setY(self, float)
+setZOrder
+setZOrder(self, int)
 setZoomOnTouchDown
 setZoomOnTouchDown(self, bool)
 setcolourPicker
 setcolourPicker(self, cc.ControlSaturationBrightnessPicker)
+setonEnterTransitionDidFinishCallback
+setonEnterTransitionDidFinishCallback(self, function)
+setonExitTransitionDidStartCallback
+setonExitTransitionDidStartCallback(self, function)
+setupTileSprite
+setupTileSprite(self, cc.Sprite, vec2_table, int)
 setupTiles
 setupTiles(self)
 setupTimerWithInterval
 setupTimerWithInterval(self, float, unsigned, float)
 shaderSource
 shaderSource(int, string)
-shuffle
-shuffle(self, unsigned, unsigned)
 simulationActionUpdate
 simulationActionUpdate(self, float)
 solid
@@ -7968,17 +8096,19 @@ sortAllChildren(self)
 sortAllProtectedChildren
 sortAllProtectedChildren(self)
 sp
-sphericalRadius
-sphericalRadius(self, float, float, float)
 start
 startAnimation
 startAnimation(self)
 startAutorepeat
 startAutorepeat(self)
+startDiscoveryController
+startDiscoveryController(self)
 startWithTarget
 startWithTarget(self, cc.Node)
 step
 step(self, float)
+stepToFrame
+stepToFrame(self, int)
 stop
 stop(self)
 stopAction
@@ -7994,13 +8124,15 @@ stopAnimation(self)
 stopAutorepeat
 stopAutorepeat(self)
 stopBackgroundMusic
+stopBackgroundMusic(self)
 stopBackgroundMusic(self, bool)
+stopDiscoveryController
+stopDiscoveryController(self)
 stopEffect
 stopEffect(int)
 stopEffect(self, unsigned)
 stopMusic
 stopMusic(bool)
-stopMusic(self)
 stopPropagation
 stopPropagation(self)
 stopSystem
@@ -8035,21 +8167,6 @@ unbindImageAsync(self, string)
 unloadEffect
 unloadEffect(char)
 unloadEffect(self, char)
-unregisterControlEventHandler
-unregisterControlEventHandler(self, int)
-unregisterScriptEditBoxHandler
-unregisterScriptEditBoxHandler(self)
-unregisterScriptHandler
-unregisterScriptHandler(self)
-unregisterScriptHandler(self, int)
-unregisterScriptTapHandler
-unregisterScriptTapHandler(self)
-unregisterSpineEventHandler
-unregisterSpineEventHandler(self)
-unscheduleScriptEntry
-unscheduleScriptEntry(self, int)
-unscheduleUpdate
-unscheduleUpdate(self)
 unselected
 unselected(self)
 up
@@ -8069,7 +8186,6 @@ updateContent(self)
 updateDisplayedColor
 updateDisplayedColor(self, color3b_table)
 updateDisplayedOpacity
-updateDisplayedOpacity(self, char)
 updateDisplayedOpacity(self, unsigned)
 updateLayoutUsingTouchLocation
 updateLayoutUsingTouchLocation(self, vec2_table)
@@ -8077,8 +8193,6 @@ updateOffsetPoint
 updateOffsetPoint(self)
 updatePosition
 updatePosition(self, vec2_table)
-updateQuadWithParticle
-updateQuadWithParticle(self, cc.sParticle, vec2_table)
 updateSizeAndPosition
 updateSizeAndPosition(self, size_table)
 updateToFrameByTime
@@ -8089,8 +8203,6 @@ updateUniforms
 updateUniforms(self)
 updateWithBatchNode
 updateWithBatchNode(self, cc.SpriteBatchNode, rect_table, bool, rect_table)
-updateWithData
-updateWithData(self, void, int, int, int, int)
 updateWithNoTime
 updateWithNoTime(self)
 updateZOrder
@@ -8102,14 +8214,16 @@ useProgram(int)
 vertical
 visit
 visit(self, cc.Renderer, cc.Mat4, bool)
+visit(self, cc.Renderer, mat4_table, unsigned)
 waitForQuit
 waitForQuit(self)
+widgetFromBinaryFile
+widgetFromBinaryFile(self, char)
 widgetFromJsonFile
 widgetFromJsonFile(self, char)
 willPlayBackgroundMusic
 willPlayBackgroundMusic(self)
 willPlayMusic
-willPlayMusic(self)
 world2Local
 world2Local(self, vec2_table)
 writeToFile
